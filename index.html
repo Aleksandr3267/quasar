@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quasar</title>
+
+  <!-- СТИЛИ -->
+  <!-- ------------------------- pagination for news ------------------------- -->
+  <link href="./libcss/buzina-pagination.min.css" rel="stylesheet" type="text/css">
+  <!-- ---------------------------------- - ---------------------------------- -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link rel="shortcut icon" href="img/Token.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<!-- WRAPPER   -->
+<div class="wrapper">
+  <div class="wrapper__block">
+    <a href="#header" class="wrapper__tre"><img src="./img/Subtract.svg" alt="top-scroll"></a>
+  </div>
+  <!-- header -->
+  <header id="header" class="header">
+    <div id="navbar" class="top_menu ">
+      <nav class="tm-navbar uk-navbar container">
+        <div class="top_logo">
+          <a href="#"><img src="./img/LOGO.png" alt="logo"></a>
+        </div>
+        <!-- бургер меню -->
+        <div class="header-burger">
+          <span></span>
+        </div>
+        <!-- МЕНЮ -->
+        <div id="main-menu" class="menu">
+          <ul class="top_menu_list">
+            <li>
+              <a href="#">Stake</a>
+            </li>
+            <li>
+              <a href="#">How it works</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+          
+          <!-- menu in burger -->
+          <div class="menu-in">
+            <div class="menu-in">
+              <a href="#" class="menu-in-button-launch">Launch App</a>
+              <a href="#" class="menu-in-button-doc">Documentation</a>
+            </div>
+            <div class="menu-in-social">
+              <ul class="footer__social">
+                <li><a href="#"><img src="./img/telegram.svg" alt="social"> Telegram Chat (EN)</a></li>
+                <li><a href="#"><img src="./img/twitter.svg" alt="social">Twitter</a></li>
+                <li><a href="#"><img src="./img/discord.svg" alt="social">Discord</a></li>
+                <li><a href="#"><img src="./img/envelope.svg" alt="social">Mail</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      
+
+        <div class="my-token">
+          <img src="./img/Token.svg" alt="token">
+          <span class="my-token__sum">$7.651</span>
+        </div>
+        <a href="#" class="button-launch">Launch App</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="container">
+      <div class="main__content">
+        <h1>WE INTRODUCE QUASAR DAO</h1>
+        <p>Financial tools to grow your wealth - stake and earn compounding interest</p>
+        <div class="main__buttons">
+          <a href="#" class="main__button-launch">Launch App</a>
+          <a href="#" class="main__button-doc">Documentation</a>
+        </div>
+        <div class="main__socials">
+          <a href="#" class="main__soc"><img src="./img/Vector.svg" alt="social"></a>
+          <a href="#" class="main__soc"><img src="./img/Vector2.svg" alt="social"></a>
+          <a href="#" class="main__soc"><img src="./img/Vector3.svg" alt="social"></a>
+        </div>
+        <div class="main__mouse">
+          <img src="./img/Group.svg" alt="mouse">
+        </div>
+      </div>
+      <div class="main__image-token"> <img src="./img/main-image.png" alt="main-image"></div>
+    </div>
+  </main>
+
+
+  <!-- --------------------------- what-is-quasar ---------------------------- -->
+  <section class="what-is-quasar">
+    <div class="container">
+      <h2 class="what-is-quasar__title  animate__animated animate__backInLeft">WHAT IS QUASAR?</h2>
+      <div class="what-is-quasar__content">
+        <div class="what-is-quasar__block first">
+          <p class="text-bold  animate__animated animate__fadeInLeft animate__delay-1s">WE ARE BUILDING A NEW FINANCIAL SYSTEM</p>
+          <p class="text-thin">Quasar is a decentralized reserve currency that is not tied to any fiat currency. Token
+            $QUAS aims to curb inflation and preserve purchasing power for users.</p>
+        </div>
+        <div class="what-is-quasar__block">
+          <p class="text-bold-two  animate__animated animate__fadeInRight animate__delay-1s">HELP FOR USERS</p>
+          <p class="text-thin-two">Instead of spending their LP tokens to receive farming rewards, users can exchange
+            their LP tokens for protocol management tokens at a reduced rate. This is done through a process called
+            Bonding. Since the protocol never sells these LP tokens, liquidity is effectively locked in its treasury.
+          </p>
+        </div>
+        <div class="what-is-quasar__block third  ">
+          <p class="text-bold-three animate__animated animate__fadeInLeft animate__delay-1s">HELP TO PROTOCOLS</p>
+          <p class="text-thin-three">Quasar is a new platform to help protocols acquire their own liquidity. Protocols
+            no longer have to pay out high incentives for renting liquidity, and also guarantee consistency of liquidity
+            to facilitate transactions.</p>
+        </div>
+      </div>
+      <a href="#" class="what-is-quasar__button">Buy Token</a>
+    </div>
+  </section>
+
+
+  <!-- ---------------------------- how it works? ---------------------------- -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="how-it-works__titles">
+        <h2>How <br>it works?</h2>
+        <p>Quasar strives to preserve and increase the income of each user</p>
+      </div>
+      <div class="how-it-works__lists">
+        <div class="list-and-slide">
+          <h3>Asset-backed Assets</h3>
+          <p>Each quasar token is supported by a basket of stablecoins and quasar-USDT LP in the treasury. This
+            means that 1 $Quas will always be equal to 1 dollar or more.</p>
+          <div class="list-num">01</div>
+        </div>
+
+        <div class="list-and-slide">
+          <h3>Protocol control</h3>
+          <p>Treasury and reserve are managed and controlled by the protocol itself, ensuring transparency and
+            fairness for all participants.</p>
+          <div class="list-num">02</div>
+        </div>
+
+        <div class="list-and-slide">
+          <h3>Сommunity</h3>
+          <p>Quas is an open, community-driven protocol in which token holders can discuss, propose and implement
+            changes to the protocol.</p>
+          <div class="list-num">03</div>
+        </div>
+
+        <div class="list-and-slide">
+          <h3>Auto compounding</h3>
+          <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
+          </p>
+          <div class="list-num">04</div>
+        </div>
+      </div>  
+    </div>
+    <div class="how-it-works__scrollbar"></div>
+  </section>
+
+
+  <!-- ---------------------------- economic-here ---------------------------- -->
+  <section class="economic-here">
+    <div class="container">
+      <div class="economic-here__titles">
+        <h2>THE ECONOMIC OF THE FUTURE IS ALREADY HERE</h2>
+      </div>
+      <div class="economic-here__content">
+        <div class="economic-here__content-left">
+          <div class="content-block">
+            <h3>Staking</h3>
+            <p>Use the tool for passive earnings by keeping your $QUAS tokens</p>
+          </div>
+          <div class="economic-here__content-line line-left"></div>
+          <div class="content-block">
+            <h3>Bonding</h3>
+            <p>Provide liquidity and get QUAS tokens at a discount, as well as get a fixed income at a set point in time
+              in $QUAS tokens</p>
+          </div>
+        </div>
+        <div class="economic-here__video">
+          <div class="economic-here__video-line">
+            <div class="economic-here__video-line-two">
+              <div class="economic-here__video-circle">
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="economic-here__content-right">
+          <div class="content-block">
+            <h3>Exchange</h3>
+            <p>Buy, exchange and trade $QUAS tokens
+              on various DEX and CEX exchanges</p>
+          </div>
+          <div class="economic-here__content-line line-right"></div>
+          <div class="content-block">
+            <h3>Possibilities</h3>
+            <p>QUASAR offers many earning tools. Now you don't need to look for alternative sources of high profitability. All financial instruments in one place now!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ---------------------------- DAO is changing ---------------------------- -->
+  <section class="DAO-is-changing">
+    <div class="DAO-is-changing__container">
+      <div class="DAO-is-changing__titles">
+        <h2>Quasar DAO is changing the DeFi world</h2>
+      </div>
+
+      <div class="DAO-is-changing__lists">
+        <p class="sub-title">The Quasar protocol is designed to allow the value of the $QUAS token to grow over time. This creates a hedge
+          against inflation. Providing the $QUAS token with a pool of stablecoins ensures the stability of the token
+          price.</p>
+        <div class="DAO-is-changing__slider swiper-container">
+          <div class="image_slider_wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class=" swiper-slide ">
+              <div class="image-slider__image">
+                <p>Quasar rewards all members with cumulative interest by increasing their $QUAS token supply.
+                  All $QUAS minted for betting fees are backed by Quasar treasury reserves.</p>
+                <div class="list-num">01</div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                <p>The Quasar DAO protocol owns almost all of its liquidity, which helps maintain price stability and treasury income. With the protocol's liquidity, Quasar is protected from adverse market conditions.</p>
+                <div class="list-num">02</div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                <p>The QUAS token is minted and evenly distributed among the users who place bets. The more users place QUAS bets, the more APY decreases, but the price of the QUAS token rises, thereby creating a balance that protects your investment.</p>
+                <div class="list-num">03</div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
+                </p>
+                <div class="list-num">04</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                
+                <p>Each quasar token is supported by a basket of stablecoins and quasar-USDT LP in the treasury. This
+                  means that 1 $Quas will always be equal to 1 dollar or more.</p>
+                <div class="list-num">01</div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                <p>Treasury and reserve are managed and controlled by the protocol itself, ensuring transparency and
+                  fairness for all participants.</p>
+                <div class="list-num">02</div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="image-slider__image">
+                <p>Quas is an open, community-driven protocol in which token holders can discuss, propose and implement
+                  changes to the protocol.</p>
+                <div class="list-num">03</div>
+              </div>
+            </div>
+            <div class=" swiper-slide ">
+              <div class="image-slider__image">
+                <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
+                </p>
+                <div class="list-num">04</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="whats-new">
+    <div class="whats-new__container">
+      <div class="whats-new__titles">
+        <h2>Whats new</h2>
+      </div>
+
+      <div class="whats-new__news-container">
+        <div class="whats-new__filter">
+          <div class="controls">
+            <button val="off" class="button" filter="#">See all</button>
+            <button val="on" class="button focused" filter="#">Latest</button>
+            <button val="off" class="button" filter="#">Important</button>
+          </div>
+        </div>
+
+        <div id="example" class="whats-new__news">
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+          <div class="news-block">
+            <div class="news-block-content">
+              <p class="news-date">12th 2021</p>
+              <h5 class="news-title">This is a QUASAR start</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ------------------------------- footer -------------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <img src="./img/footer-logo.png" alt="logo">
+          </div>
+          <p>QUASAR DAO © 2022 All Rights Reserved. This is not an investment solicitation or offering. USA citizens, residents and legal entities are fully excluded.</p>
+        </div>
+        <div class="footer__center">
+          <ul>
+            <li><a href="#">Stake</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__social">
+            <li><a href="#"><img src="./img/telegram.svg" alt="social"> Telegram Chat (EN)</a></li>
+            <li><a href="#"><img src="./img/twitter.svg" alt="social">Twitter</a></li>
+            <li><a href="#"><img src="./img/discord.svg" alt="social">Discord</a></li>
+            <li><a href="#"><img src="./img/envelope.svg" alt="social">Mail</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- СКРИПТЫ -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/0f50a82545.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"
+  integrity="sha256-o/z6kPkEdOiAuBTgTdUaFN/F+srDaF3EbsJbkeAboXk=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.min.js"></script>
+
+
+<!-- ----- for pagination ----- -->
+<script src="./libjs/buzina-pagination.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#example').buzinaPagination({
+      itemsOnPage:3
+    });
+  });
+</script>
+</body>
+</html>

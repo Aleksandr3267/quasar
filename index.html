@@ -8,9 +8,6 @@
   <title>Quasar</title>
 
   <!-- СТИЛИ -->
-  <!-- ------------------------- pagination for news ------------------------- -->
-  <link href="./libcss/buzina-pagination.min.css" rel="stylesheet" type="text/css">
-  <!-- ---------------------------------- - ---------------------------------- -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/media.css">
@@ -20,15 +17,23 @@
 </head>
 <!-- WRAPPER   -->
 <div class="wrapper">
+
+
   <div class="wrapper__block">
-    <a href="#header" class="wrapper__tre"><img src="./img/Subtract.svg" alt="top-scroll"></a>
+    <a href="#header" class="wrapper__tre">
+      <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10V60C0 65.5229 4.47715 70 10 70H60C65.5229 70 70 65.5229 70 60V10C70 4.47715 65.5229 0 60 0H10ZM36.241 17.0797C35.4754 15.7254 33.5246 15.7254 32.7589 17.0797L15.8355 47.0157C15.0818 48.349 16.045 50 17.5765 50H51.4235C52.955 50 53.9182 48.349 53.1645 47.0157L36.241 17.0797Z" fill="#E988EB"/>
+      </svg>
+    </a>
   </div>
+
+
   <!-- header -->
   <header id="header" class="header">
     <div id="navbar" class="top_menu ">
       <nav class="tm-navbar uk-navbar container">
         <div class="top_logo">
-          <a href="#"><img src="./img/LOGO.png" alt="logo"></a>
+          <a href="#"><img src="./img/logo.svg" alt="logo"></a>
         </div>
         <!-- бургер меню -->
         <div class="header-burger">
@@ -47,26 +52,64 @@
               <a href="#">FAQ</a>
             </li>
           </ul>
-          
+
           <!-- menu in burger -->
           <div class="menu-in">
-            <div class="menu-in">
+            <div class="menu-in-buttons">
               <a href="#" class="menu-in-button-launch">Launch App</a>
               <a href="#" class="menu-in-button-doc">Documentation</a>
             </div>
             <div class="menu-in-social">
-              <ul class="footer__social">
-                <li><a href="#"><img src="./img/telegram.svg" alt="social"> Telegram Chat (EN)</a></li>
-                <li><a href="#"><img src="./img/twitter.svg" alt="social">Twitter</a></li>
-                <li><a href="#"><img src="./img/discord.svg" alt="social">Discord</a></li>
-                <li><a href="#"><img src="./img/envelope.svg" alt="social">Mail</a></li>
+              <ul class="social">
+                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_422_237)">
+                  <path d="M24.5102 2.04812C24.108 1.67962 23.5364 1.55682 23.0183 1.72757L1.03644 8.97371C0.437365 9.17117 0.0311146 9.70594 0.00147595 10.336C-0.0281139 10.966 0.326134 11.5366 0.903966 11.7895L6.34025 14.168C6.36676 14.291 7.92736 21.5291 7.98043 21.7752C8.04855 22.0912 8.20895 22.3727 8.54874 22.4593C8.89244 22.5468 9.13527 22.359 9.39171 22.167C9.53444 22.0601 13.4259 19.1462 13.4259 19.1462L18.1422 23.0055C18.4169 23.2304 18.7526 23.3477 19.0949 23.3477C19.2579 23.3477 19.4225 23.3211 19.5825 23.2668C20.0789 23.0985 20.4469 22.6934 20.5669 22.1832L24.9597 3.50633C25.0846 2.97532 24.9124 2.41663 24.5102 2.04812ZM9.74313 15.5309C9.74044 15.5373 9.73781 15.5445 9.73531 15.5531L8.82594 18.7302L7.8111 14.0234L14.7895 10.1462L9.91051 15.2477C9.83365 15.3281 9.77711 15.4252 9.74313 15.5309ZM10.0318 19.8534L10.4448 18.4103L10.8399 17.03L12.2554 18.1884L10.0318 19.8534ZM23.5304 3.1701L19.1376 21.847C19.1354 21.8562 19.1325 21.869 19.111 21.8763C19.0897 21.8835 19.0794 21.8753 19.072 21.8692L13.9113 17.6462C13.9112 17.6461 13.9111 17.6459 13.9109 17.6458L11.5199 15.6892L19.2017 7.65706C19.4526 7.39471 19.474 6.98841 19.2522 6.70105C19.0303 6.41365 18.6318 6.33157 18.3145 6.50794L6.93995 12.8277L1.49254 10.4443C1.47594 10.437 1.46681 10.433 1.46813 10.4049C1.46944 10.3769 1.47892 10.3738 1.4961 10.3681L23.4779 3.122C23.4886 3.11853 23.5006 3.11453 23.5183 3.13064C23.5359 3.14685 23.533 3.15916 23.5304 3.1701Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_422_237">
+                  <rect width="25" height="25" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg> Telegram Chat (EN)</a></li>
+                <li>
+                  <a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.8895 5.34858C24.7417 5.10815 24.4713 4.97187 24.1897 4.99628L22.9432 5.10487L24.1347 2.70287C24.2766 2.41678 24.2205 2.0721 23.9953 1.84569C23.7701 1.61927 23.4257 1.56156 23.139 1.70199L19.9853 3.24647C18.0369 2.21786 15.6027 2.52318 13.9277 4.04901C12.5297 5.32245 11.7949 7.28081 11.9319 9.23374C8.27813 8.86753 5.18535 6.77617 3.35654 3.39696C3.2352 3.17279 3.00771 3.02616 2.75346 3.00814C2.49873 2.99042 2.25332 3.10331 2.10166 3.30824C0.967375 4.84057 0.887785 6.94155 1.777 8.67002C1.53188 8.6081 1.27104 8.52431 0.98178 8.42768C0.733976 8.34482 0.460783 8.3979 0.261905 8.56743C0.0630278 8.73696 -0.0325778 8.99824 0.00995159 9.2561C0.361808 11.3893 1.60576 13.0288 3.5708 13.9992C3.31494 14.0883 3.05385 14.1607 2.78838 14.216C2.52461 14.271 2.31103 14.4639 2.22973 14.7208C2.14843 14.9776 2.21201 15.2584 2.39609 15.4551C3.81118 16.9677 5.85532 17.7122 7.30728 18.0694C5.6564 19.3622 3.87431 19.5785 1.28476 19.4896C0.985002 19.4805 0.70883 19.6494 0.582804 19.9211C0.456827 20.1929 0.505705 20.5137 0.707023 20.7356C1.78652 21.9255 5.71944 23.2672 9.85382 23.3678C10.0173 23.3718 10.1841 23.3739 10.3545 23.3739C13.2573 23.3739 17.0938 22.7516 19.8476 19.9978C21.9319 17.9135 23.2356 15.5141 23.7224 12.8663C24.1156 10.7278 23.8671 9.01528 23.7477 8.19223C23.7389 8.13174 23.7295 8.06753 23.7219 8.01137L24.888 6.13198C25.0367 5.89223 25.0373 5.58901 24.8895 5.34858ZM22.2721 8.4063C22.4933 9.93091 23.1664 14.5704 18.7933 18.9435C16.2513 21.4854 12.5487 21.9419 9.89005 21.8773C7.62144 21.8221 5.59224 21.3882 4.12153 20.8934C4.71865 20.8201 5.25078 20.7072 5.75308 20.551C7.1378 20.1206 8.30762 19.3462 9.43448 18.1138C9.62232 17.9084 9.68004 17.6155 9.58429 17.3542C9.48853 17.0928 9.25514 16.9066 8.97906 16.8713C8.26817 16.7801 6.13213 16.4206 4.4501 15.2603C4.93481 15.0621 5.4023 14.814 5.84868 14.5179C6.09356 14.3554 6.22022 14.0643 6.17198 13.7744C6.12378 13.4845 5.90987 13.2499 5.62559 13.1754C4.24888 12.8145 2.58735 12.0068 1.82119 10.204C2.31044 10.2897 2.84243 10.3105 3.40981 10.1833C3.6728 10.1244 3.88354 9.92808 3.96089 9.66987C4.03828 9.41167 3.97031 9.13179 3.7831 8.93794C2.82978 7.95053 2.47329 6.52758 2.77915 5.30995C3.78081 6.77387 5.04981 8.00591 6.50372 8.9168C8.36363 10.0821 10.5344 10.7261 12.7816 10.779C13.0102 10.7838 13.2296 10.684 13.3752 10.5068C13.5207 10.3297 13.5766 10.0955 13.5269 9.87173C13.1403 8.13369 13.6917 6.28085 14.9317 5.15131C16.2178 3.97968 18.1187 3.80194 19.5541 4.71937C19.7733 4.85946 20.0498 4.87514 20.2835 4.76068L21.8236 4.00639L21.0175 5.63144C20.8977 5.87289 20.9176 6.1602 21.0695 6.38281C21.2213 6.60541 21.4811 6.729 21.75 6.70541L22.8361 6.61083L22.3358 7.41723C22.1679 7.68789 22.2027 7.92802 22.2721 8.4063Z" fill="white"/>
+                  </svg>Twitter</a>
+                </li>
+                <li>
+                  <a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_422_241)">
+                  <path d="M9.03931 9.91895C7.59365 9.91895 6.41748 11.2147 6.41748 12.8074C6.41748 14.4 7.59365 15.6958 9.03931 15.6958C10.485 15.6958 11.6612 14.4 11.6612 12.8074C11.6612 11.2147 10.485 9.91895 9.03931 9.91895ZM9.03931 14.231C8.40137 14.231 7.88232 13.5923 7.88232 12.8074C7.88232 12.0224 8.40137 11.3838 9.03931 11.3838C9.67729 11.3838 10.1964 12.0224 10.1964 12.8074C10.1964 13.5923 9.67729 14.231 9.03931 14.231Z" fill="white"/>
+                  <path d="M15.9605 9.91895C14.5148 9.91895 13.3386 11.2147 13.3386 12.8074C13.3386 14.4 14.5148 15.6958 15.9605 15.6958C17.4062 15.6958 18.5824 14.4 18.5824 12.8074C18.5824 11.2147 17.4062 9.91895 15.9605 9.91895ZM15.9605 14.231C15.3226 14.231 14.8035 13.5923 14.8035 12.8074C14.8035 12.0224 15.3226 11.3838 15.9605 11.3838C16.5985 11.3838 17.1175 12.0224 17.1175 12.8074C17.1175 13.5923 16.5985 14.231 15.9605 14.231Z" fill="white"/>
+                  <path d="M24.9986 17.7039C24.9814 17.3942 24.5434 10.0692 21.7618 5.68745C21.7049 5.59785 21.6292 5.52163 21.54 5.46421C18.1005 3.24941 15.7577 3.25576 15.6597 3.25537C15.3756 3.25913 15.1309 3.42437 15.0127 3.66314L13.8311 5.92749C13.3909 5.89868 12.9465 5.88374 12.4998 5.88374C12.0531 5.88374 11.6087 5.89868 11.1685 5.92749L9.98825 3.66577C9.87052 3.42563 9.62507 3.25918 9.33986 3.25542C9.24128 3.25483 6.89875 3.24966 3.45969 5.46426C3.37048 5.52173 3.29474 5.5979 3.23786 5.6875C0.456218 10.0692 0.0181812 17.3942 0.000896026 17.7039C-0.00994382 17.898 0.0568531 18.0885 0.186589 18.2334C0.315593 18.3773 3.38 21.7446 7.61569 21.7446C7.63464 21.7446 7.65412 21.7445 7.67311 21.7444C7.89572 21.7428 8.10544 21.64 8.24318 21.4653L10.1969 18.9858C10.9473 19.0715 11.7181 19.1162 12.4998 19.1162C13.2815 19.1162 14.0523 19.0715 14.8026 18.9858L16.7564 21.4653C16.8941 21.64 17.1038 21.7428 17.3264 21.7444C17.3457 21.7445 17.3646 21.7446 17.3839 21.7446C21.6192 21.7446 24.684 18.3773 24.813 18.2334C24.9426 18.0885 25.0094 17.898 24.9986 17.7039ZM17.6818 20.2729L16.4603 18.7227C18.3196 18.3401 19.9885 17.6893 21.2912 16.8153C21.6271 16.5899 21.7168 16.1349 21.4914 15.799C21.2661 15.4631 20.8109 15.3733 20.4751 15.5988C18.5309 16.9033 15.6239 17.6513 12.4998 17.6513C9.37575 17.6513 6.46882 16.9033 4.52443 15.599C4.18845 15.3736 3.73351 15.4633 3.50817 15.7992C3.28283 16.1352 3.37248 16.5901 3.70842 16.8155C5.01115 17.6893 6.68 18.3402 8.53932 18.7227L7.31789 20.2728C4.45007 20.1397 2.16784 18.1342 1.48635 17.4687C1.60011 16.0495 2.19045 10.1963 4.38981 6.6084C6.54953 5.24512 8.17936 4.86597 8.90729 4.7606L9.60221 6.09219C7.96838 6.33076 6.43766 6.76919 5.13381 7.38306C4.76784 7.55532 4.61086 7.9917 4.78312 8.35772C4.95544 8.72363 5.39181 8.88057 5.75773 8.7084C7.62033 7.83149 10.0147 7.34858 12.4998 7.34858C14.985 7.34858 17.3794 7.83159 19.2419 8.70859C19.3427 8.75605 19.4488 8.77856 19.5534 8.77856C19.8282 8.77856 20.0917 8.62305 20.2166 8.35796C20.3888 7.99204 20.2319 7.55562 19.8659 7.3833C18.562 6.76939 17.0313 6.33086 15.3973 6.09229L16.0922 4.76069C16.8201 4.86606 18.45 5.24522 20.6098 6.6085C22.8067 10.1927 23.3989 16.052 23.5132 17.47C22.8334 18.137 20.5613 20.1408 17.6818 20.2729Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_422_241">
+                  <rect width="25" height="25" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>Discord</a>
+                </li>
+                <li>
+                  <a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_422_246)">
+                    <path d="M22.6562 3.125H2.34377C1.05133 3.125 0 4.17633 0 5.46877V19.5313C0 20.8237 1.05133 21.875 2.34377 21.875H22.6562C23.9487 21.875 25 20.8237 25 19.5313V5.46877C25 4.17633 23.9487 3.125 22.6562 3.125ZM22.6562 4.68749C22.7624 4.68749 22.8634 4.70952 22.9557 4.74798L12.5 13.81L2.04427 4.74798C2.13659 4.70957 2.23757 4.68749 2.34371 4.68749H22.6562ZM22.6562 20.3125H2.34377C1.91271 20.3125 1.56249 19.9623 1.56249 19.5312V6.39877L11.9881 15.4343C12.1353 15.5617 12.3177 15.625 12.5 15.625C12.6823 15.625 12.8647 15.5617 13.0119 15.4343L23.4375 6.39877V19.5313C23.4375 19.9623 23.0873 20.3125 22.6562 20.3125Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_422_246">
+                    <rect width="25" height="25" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>Mail</a>
+                </li>
               </ul>
             </div>
+            <div class="menu-in-my-token">
+              <img src="./img/Token.svg" alt="token">
+              <span class="my-token__sum">$7.651</span>
+            </div>
           </div>
-
         </div>
-
-      
 
         <div class="my-token">
           <img src="./img/Token.svg" alt="token">
@@ -138,6 +181,7 @@
         <h2>How <br>it works?</h2>
         <p>Quasar strives to preserve and increase the income of each user</p>
       </div>
+
       <div class="how-it-works__lists">
         <div class="list-and-slide">
           <h3>Asset-backed Assets</h3>
@@ -145,28 +189,26 @@
             means that 1 $Quas will always be equal to 1 dollar or more.</p>
           <div class="list-num">01</div>
         </div>
-
         <div class="list-and-slide">
           <h3>Protocol control</h3>
           <p>Treasury and reserve are managed and controlled by the protocol itself, ensuring transparency and
             fairness for all participants.</p>
           <div class="list-num">02</div>
         </div>
-
         <div class="list-and-slide">
           <h3>Сommunity</h3>
           <p>Quas is an open, community-driven protocol in which token holders can discuss, propose and implement
             changes to the protocol.</p>
           <div class="list-num">03</div>
         </div>
-
         <div class="list-and-slide">
           <h3>Auto compounding</h3>
           <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
           </p>
           <div class="list-num">04</div>
         </div>
-      </div>  
+      </div> 
+      
     </div>
     <div class="how-it-works__scrollbar"></div>
   </section>
@@ -192,13 +234,10 @@
           </div>
         </div>
         <div class="economic-here__video">
-          <div class="economic-here__video-line">
-            <div class="economic-here__video-line-two">
+
               <div class="economic-here__video-circle">
-                
+              
               </div>
-            </div>
-          </div>
 
         </div>
         <div class="economic-here__content-right">
@@ -230,29 +269,29 @@
         <p class="sub-title">The Quasar protocol is designed to allow the value of the $QUAS token to grow over time. This creates a hedge
           against inflation. Providing the $QUAS token with a pool of stablecoins ensures the stability of the token
           price.</p>
+
         <div class="DAO-is-changing__slider swiper-container">
           <div class="image_slider_wrapper swiper-wrapper">
-            <!-- Slides -->
-            <div class=" swiper-slide ">
+            <div class=" swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>Quasar rewards all members with cumulative interest by increasing their $QUAS token supply.
                   All $QUAS minted for betting fees are backed by Quasar treasury reserves.</p>
                 <div class="list-num">01</div>
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>The Quasar DAO protocol owns almost all of its liquidity, which helps maintain price stability and treasury income. With the protocol's liquidity, Quasar is protected from adverse market conditions.</p>
                 <div class="list-num">02</div>
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>The QUAS token is minted and evenly distributed among the users who place bets. The more users place QUAS bets, the more APY decreases, but the price of the QUAS token rises, thereby creating a balance that protects your investment.</p>
                 <div class="list-num">03</div>
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
                 </p>
@@ -260,99 +299,167 @@
               </div>
             </div>
 
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 
                 <p>Each quasar token is supported by a basket of stablecoins and quasar-USDT LP in the treasury. This
                   means that 1 $Quas will always be equal to 1 dollar or more.</p>
-                <div class="list-num">01</div>
+                <div class="list-num">05</div>
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>Treasury and reserve are managed and controlled by the protocol itself, ensuring transparency and
                   fairness for all participants.</p>
-                <div class="list-num">02</div>
+                <div class="list-num">06</div>
               </div>
             </div>
-            <div class="swiper-slide ">
+            <div class="swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>Quas is an open, community-driven protocol in which token holders can discuss, propose and implement
                   changes to the protocol.</p>
-                <div class="list-num">03</div>
+                <div class="list-num">07</div>
               </div>
             </div>
-            <div class=" swiper-slide ">
+            <div class=" swiper-slide DAO-is-changing__slide">
               <div class="image-slider__image">
                 <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a high APY
                 </p>
-                <div class="list-num">04</div>
+                <div class="list-num">08</div>
               </div>
             </div>
           </div>
           <div class="swiper-scrollbar"></div>
         </div>
+
       </div>
     </div>
   </section>
 
 
+  <!-- ----------------------------- whats-news ------------------------------ -->
   <section class="whats-new">
     <div class="whats-new__container">
       <div class="whats-new__titles">
-        <h2>Whats new</h2>
+        <h2>Quasar DAO latest news</h2>
       </div>
-
       <div class="whats-new__news-container">
-        <div class="whats-new__filter">
-          <div class="controls">
-            <button val="off" class="button" filter="#">See all</button>
-            <button val="on" class="button focused" filter="#">Latest</button>
-            <button val="off" class="button" filter="#">Important</button>
+
+        <div class="whats-news__slider swiper-container">
+          <div class="image_slider_wrapper swiper-wrapper">
+            <div class="swiper-slide whats-news__slide">
+              <div class="whats-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">01</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+              <div class="whats-news__content">
+                <p class="text-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad </p>
+                  <button class="read-more-news">Read More </button>
+              </div>
+            </div>
+            <div class="swiper-slide whats-news__slide">
+              <div class="whats-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">02</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+              <div class="whats-news__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad </p>
+                  <button class="read-more-news">Read More</button>
+              </div>
+            </div>
+            <div class="swiper-slide whats-news__slide">
+              <div class="whats-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">03</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+              <div class="whats-news__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad </p>
+                  <button class="read-more-news">Read More </button>
+              </div>
+            </div>
+            <div class="swiper-slide whats-news__slide">
+              <div class="whats-news__image">
+                <p>2 new tokens was added to QUASAR
+                </p>
+                <div class="list-num">04</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+              <div class="whats-news__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad </p>
+                  <button class="read-more-news">Read More </button>
+              </div>
+            </div>
+            <div class="swiper-slide whats-news__slide">
+              <div class="whats-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">05</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+              <div class="whats-news__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad </p>
+                  <button class="read-more-news">Read More </button>
+              </div>
+            </div>
           </div>
+          <div class="swiper-scrollbar"></div>
         </div>
 
-        <div id="example" class="whats-new__news">
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-          <div class="news-block">
-            <div class="news-block-content">
-              <p class="news-date">12th 2021</p>
-              <h5 class="news-title">This is a QUASAR start</h5>
-            </div>
-          </div>
-
+        <!-- whats-new__title-right -->
+        <div class="whats-new__title-right">
+          <h2>Quasar DAO latest news</h2>
         </div>
+
+        <!-- mini -->
+        <div class="whats-mini-news__slider swiper-container">
+          <div class="image-mini-slider_wrapper swiper-wrapper">
+            <div class=" swiper-slide ">
+              <div class="whats-mini-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">01</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="whats-mini-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">02</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="whats-mini-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">03</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="whats-mini-news__image">
+                <p>2 new tokens was added to QUASAR
+                </p>
+                <div class="list-num">04</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="whats-mini-news__image">
+                <p>2 new tokens was added to QUASAR</p>
+                <div class="list-num">05</div>
+                <span class="date-news">12 nov 2021</span>
+              </div>
+            </div>
+          </div>  
+        </div>
+      
       </div>
-
     </div>
   </section>
 
@@ -363,7 +470,7 @@
       <div class="footer__container">
         <div class="footer__left">
           <div class="footer__logo">
-            <img src="./img/footer-logo.png" alt="logo">
+            <img src="./img/footer-logo.svg" alt="logo">
           </div>
           <p>QUASAR DAO © 2022 All Rights Reserved. This is not an investment solicitation or offering. USA citizens, residents and legal entities are fully excluded.</p>
         </div>
@@ -376,10 +483,10 @@
         </div>
         <div class="footer__right">
           <ul class="footer__social">
-            <li><a href="#"><img src="./img/telegram.svg" alt="social"> Telegram Chat (EN)</a></li>
-            <li><a href="#"><img src="./img/twitter.svg" alt="social">Twitter</a></li>
-            <li><a href="#"><img src="./img/discord.svg" alt="social">Discord</a></li>
-            <li><a href="#"><img src="./img/envelope.svg" alt="social">Mail</a></li>
+            <li><a href="#"><img src="./img/telegram.svg" alt="social"><span>Telegram Chat (EN)</span></a></li>
+            <li><a href="#"><img src="./img/twitter.svg" alt="social"><span> Twitter</span></a></li>
+            <li><a href="#"><img src="./img/discord.svg" alt="social"><span> Discord</span></a></li>
+            <li><a href="#"><img src="./img/envelope.svg" alt="social"><span> Mail</span></a></li>
           </ul>
         </div>
       </div>
@@ -392,20 +499,9 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/0f50a82545.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"
-  integrity="sha256-o/z6kPkEdOiAuBTgTdUaFN/F+srDaF3EbsJbkeAboXk=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
-<script src="js/slick.min.js"></script>
 
 
-<!-- ----- for pagination ----- -->
-<script src="./libjs/buzina-pagination.min.js"></script>
-<script>
-  $(document).ready(function () {
-    $('#example').buzinaPagination({
-      itemsOnPage:3
-    });
-  });
-</script>
+
 </body>
 </html>

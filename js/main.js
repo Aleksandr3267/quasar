@@ -56,8 +56,8 @@ window.onload = function(){
       const coordX = e.pageX - parallaxWidth / 2;
       const coordY = e.pageY - parallaxHeight / 2;
       //получаем полценты
-      coordXprocent = coordX / parallaxWidth * -100;
-      coordYprocent = coordY / parallaxHeight * -100;
+      coordXprocent = coordX / parallaxWidth * -50;
+      coordYprocent = coordY / parallaxHeight * -50;
     });
   }
 }
@@ -92,7 +92,7 @@ $("a.wrapper__tre").on("click", function(e){
 
 
 
-// slider
+// slider DAO is changing
 new Swiper('.DAO-is-changing__slider', {
   scrollbar: {
       el: '.swiper-scrollbar',
@@ -100,16 +100,64 @@ new Swiper('.DAO-is-changing__slider', {
   },
   autoHeight: true,
   slidesPerView:3,
-  spaceBetween:64,
+  // spaceBetween:64,
   sledesPerGroup: 1,
   // adaptive
   breakpoints: {
-      320: {
-          slidesPerView: 1,
+      320:{
+        slidesPerView: 1,
+        spaceBetween:34
+      },
+      424:{
+        slidesPerView: 2,
+      },
+      1180:{
+        slidesPerView: 3,
+      },
+      1501:{
+        slidesPerView: 2,
       },
       1880: {
-          slidesPerView: 2,
-      },
+          slidesPerView: 3,
+      }
 
   },
 });
+
+
+
+
+
+
+const sliderThumbs = new Swiper('.whats-mini-news__slider', {
+  slidesPerView: 5,
+  spaceBetween:63,
+  watchOverflow:true,
+  initialSlide:0,
+});
+
+// slider whats-news
+new Swiper('.whats-news__slider', {
+  scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+  },
+  autoHeight: true,
+  slidesPerView:1,
+  slidesPerGroup: 1,
+  effect:'fade',
+  fadeEffect:{
+    crossFade: true,
+  },
+  thumbs:{
+    swiper: sliderThumbs
+  },
+});
+
+
+
+
+
+
+
+

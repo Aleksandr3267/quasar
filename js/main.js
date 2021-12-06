@@ -68,18 +68,14 @@ $(function() {
   $(window).scroll(function() {
   if($(this).scrollTop() >= 700) {
   $('.wrapper__block').fadeIn();
- 
   } else {
   $('.wrapper__block').fadeOut();
-  
   }
   });
   $('.wrapper__block').click(function() {
   $('body,html').animate({scrollTop:0},700);
   });
   });
-
-
 
 
 $("a.wrapper__tre").on("click", function(e){
@@ -100,24 +96,26 @@ new Swiper('.DAO-is-changing__slider', {
   },
   autoHeight: true,
   slidesPerView:3,
-  // spaceBetween:64,
+  spaceBetween:64,
   sledesPerGroup: 1,
   // adaptive
   breakpoints: {
       320:{
-        slidesPerView: 1,
-        spaceBetween:34
-      },
-      424:{
         slidesPerView: 2,
+        spaceBetween:20,
       },
-      1180:{
+      450:{
+        slidesPerView: 2,
+        spaceBetween:26,
+      },
+      1101:{
         slidesPerView: 3,
+        spaceBetween:64,
       },
       1501:{
         slidesPerView: 2,
       },
-      1880: {
+      1700: {
           slidesPerView: 3,
       }
 

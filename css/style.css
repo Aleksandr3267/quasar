@@ -715,7 +715,8 @@ color: #92EADA;
   height: 100px;
 }
 
-.DAO-is-changing__lists .sub-title{
+.DAO-is-changing__lists .sub-title, 
+.DAO-is-changing .DAO-is-changing__sub{
   width: 100%;
   max-width: 800px;
   font-family:var(--montserrat);
@@ -728,7 +729,8 @@ color: #92EADA;
   left: 20px;
   position: relative;
 }
-.DAO-is-changing__lists .sub-title::before{
+.DAO-is-changing__lists .sub-title::before, 
+.DAO-is-changing .DAO-is-changing__sub::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -738,6 +740,9 @@ color: #92EADA;
   background: #F1F1F1;
   box-shadow:  inset 2px 2px 2px #C4C4C4;
   transform: rotate(-90deg);
+}
+.DAO-is-changing .DAO-is-changing__sub{
+  display: none;
 }
 .DAO-is-changing__slider{
   margin: 50px 0 0 0;

@@ -95,10 +95,24 @@
 	.DAO-is-changing__container{
 		flex-direction: column;
 	}
+	.DAO-is-changing .DAO-is-changing__titles{
+		display: flex;
+		align-items: center;
+	}
 	.DAO-is-changing__titles h2{
 		font-size: 3rem;
 		margin: 0;
 		line-height: 50px;
+	}
+	.DAO-is-changing .DAO-is-changing__sub{
+		display: flex;
+		font-size: 1.2rem;
+		line-height: 25px;
+		max-width: 700px;
+	}
+	.DAO-is-changing .DAO-is-changing__sub::before{
+		left: -120px;
+		
 	}
 	.DAO-is-changing__lists .sub-title{
 		display: none;
@@ -154,6 +168,9 @@
 	}
 	.how-it-works__lists .list-and-slide:hover{
 		transform: none;
+	}
+	.how-it-works__scrollbar{
+		display: none;
 	}
 
 
@@ -541,6 +558,12 @@
 }
 @media(max-width:1024px){
 	.main__mouse{
+		display: none;
+	}
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	.DAO-is-changing .DAO-is-changing__sub{
 		display: none;
 	}
 }

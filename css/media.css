@@ -1,4 +1,10 @@
-
+@media(max-width:1712px){
+	
+	/* ------------------------------ how-it-works ------------------------------ */
+	.list-and-slide{
+		margin: 30px 15px 0 15px;
+	}
+}
 @media(max-width:1700px){
 
 	/* ----------------------------- what-is-quasar ----------------------------- */
@@ -18,6 +24,62 @@
 		max-width: 750px;
 	}
 }
+@media(max-width:1592px){
+	.container{
+		padding: 0 160px;
+	}
+
+
+	/* --------------------------------- header --------------------------------- */
+	.top_menu nav{
+		padding: 15px 200px;
+	}
+
+
+	/* ---------------------------------- main ---------------------------------- */
+	.main .main__content{
+		margin: 213px 0 0 0;
+	}
+	.main .main__content h1{
+		font-size: 3.6rem;
+	}
+	.main .main__content p{
+		font-size: 2rem;
+	}
+	.main .main__image-token{
+		top: -200px;
+	}
+	.main .main__image-token img {
+		width: 754px;
+	}
+
+
+	/* ----------------------------- what-is-quasar ----------------------------- */
+	.what-is-quasar__content .text-bold, .what-is-quasar__content .text-bold-two, .what-is-quasar__content .text-bold-three{
+		font-size: 3.5rem;
+	}
+	.what-is-quasar__content .text-bold-two{
+		max-width: 400px;
+	}
+
+
+	/* ------------------------------ how-it-works ------------------------------ */
+	.how-it-works .how-it-works__titles h2{
+		font-size: 4.14rem;
+	}
+	.list-and-slide{
+		max-width: 248px;
+		padding: 44px 20px;
+		margin: 30px 10px 0 10px;
+	}
+
+
+	/* -------------------------------- whats-new ------------------------------- */
+	.whats-new__title-right h2, .whats-new__container .whats-new__titles h2{
+		font-size: 3.5rem;
+		line-height: 60px;
+	}
+}
 @media(max-width:1500px){
 
 	/* ------------------------------ economic-here ----------------------------- */
@@ -28,7 +90,7 @@
 	
 	/* ----------------------------- DAO-is-changing ---------------------------- */
 	.DAO-is-changing {
-		padding: 131px 46px 139px 46px;
+		padding: 131px 200px 139px 200px;
 	}
 	.DAO-is-changing__container{
 		flex-direction: column;
@@ -68,19 +130,36 @@
 
 	/* --------------------------------- header --------------------------------- */
 	.top_menu nav {
-		padding: 30px 46px;
+		padding: 15px 46px;
 	}
 
 
 	/* ----------------------------- what-is-quasar ----------------------------- */
 	.what-is-quasar__content{
-		left: 150px;
+		left: 110px;
 	}
 
 
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .how-it-works__titles h2{
 		margin: 0 0 0 30px;
+	}
+	.list-and-slide{
+		max-width: 278px;
+		padding: 44px 30px;
+		margin: 30px 30px 0 30px;
+	}
+	.how-it-works__lists .list-block::after{
+		display: none;
+	}
+	.how-it-works__lists .list-and-slide:hover{
+		transform: none;
+	}
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	.DAO-is-changing {
+		padding: 131px 46px 139px 46px;
 	}
 
 
@@ -98,15 +177,7 @@
 
 
 }
-@media(max-width:1379px){
-	/* ------------------------------ how-it-works ------------------------------ */
-	.how-it-works__lists .list-block::after{
-		display: none;
-	}
-	.how-it-works__lists .list-and-slide:hover{
-		transform: none;
-	}
-}
+
 @media(max-width:1300px){
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .how-it-works__titles h2{
@@ -412,7 +483,7 @@
 		font-size: 3rem;
 	}
 	.main .main__content p{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		line-height: 28px;
 	}
 
@@ -728,11 +799,11 @@
 	}
 	/* main content */
 	.main .main__content h1{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		line-height: 29px;
 	}
 	.main .main__content p{
-		max-width: 212px;
+		max-width: 172px;
 		margin: 22px 0 0 0;
 	}
 	.main__buttons{
@@ -806,13 +877,9 @@
 	/* -------------------------------- whats-new ------------------------------- */
 	.whats-new__container .whats-new__titles h2{
 		font-size: 1.875rem;
-		
 	}
 	.whats-news__slider .whats-news__slide{
 		padding: 30px 10px;
-	}
-	.whats-news__slide .whats-news__image{
-		padding: 34px 20px;
 	}
 	.whats-news__slide .whats-news__content{
 		margin: 30px 0 0 0;
@@ -847,10 +914,19 @@
 	}
 }
 @media(max-width:360px){
+
+	/* --------------------------------- header --------------------------------- */
+	.main__buttons .main__button-launch {
+		
+		padding: 13px 30px;
+	}
+
+
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .container {
 		padding: 0 5px;
 	}
+	
 }
 @media(max-width:340px){
 	/* ------------------------------ how-it-works ------------------------------ */

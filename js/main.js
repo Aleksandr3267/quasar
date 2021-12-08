@@ -118,11 +118,35 @@ new Swiper('.DAO-is-changing__slider', {
       1700: {
           slidesPerView: 3,
       }
-
   },
 });
 
 
+
+let ecoClick = document.querySelector('.economic-here');
+let eco1 = document.querySelector('.block1')
+let eco2 = document.querySelector('.block2')
+let eco3 = document.querySelector('.block3')
+let eco4 = document.querySelector('.block4')
+ecoClick.addEventListener('click', function(event){
+  if (document.documentElement.clientWidth < 1080) {
+  
+  if(eco4.classList.contains('active')){
+    eco4.classList.remove('active');
+    eco1.classList.add('active');
+  }else if(eco1.classList.contains('active')){
+    eco1.classList.remove('active');
+    eco2.classList.add('active');
+  }else if(eco2.classList.contains('active')){
+    eco2.classList.remove('active');
+    eco3.classList.add('active');
+  }else if(eco3.classList.contains('active')){
+    eco3.classList.remove('active');
+    eco4.classList.add('active');
+  }
+
+}
+});
 
 
 

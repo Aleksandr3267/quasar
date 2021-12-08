@@ -353,6 +353,9 @@ body {
   top: -10px;
   background: #4F4F4F;
 }
+.what-is-quasar__but{
+  text-align: center;
+}
 .what-is-quasar .what-is-quasar__button{
   background: #272727;
   border: 1px solid rgba(233, 136, 235, 0.24);
@@ -364,8 +367,7 @@ body {
   font-size: 1.5em;
   font-family: var(--roboto);
   font-weight: 500;
-  max-width: 264px;
-  display:block;
+  display:inline-block;
   margin: 0 auto;
   text-align: center;
   transition: 0.4s ease;
@@ -661,7 +663,7 @@ color: #92EADA;
   transition-delay: 0.3s;
 }
 .economic-here__video-circle:hover::before{
-  transform: scale(0.9);
+  transform: scale(0.92);
 }
 .economic-here__video-circle:hover::after{
   transform: scale(0.9);

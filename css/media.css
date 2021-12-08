@@ -34,6 +34,13 @@
 	.top_menu nav{
 		padding: 15px 200px;
 	}
+	.top_menu .top_logo a img{
+		max-width: 150px;
+	}
+	.top_menu .button-launch{
+		padding: 11px 45px;
+		font-size: 1.2em;
+	}
 
 
 	/* ---------------------------------- main ---------------------------------- */
@@ -41,16 +48,33 @@
 		margin: 213px 0 0 0;
 	}
 	.main .main__content h1{
-		font-size: 3.6rem;
+		font-size: 3.2rem;
 	}
 	.main .main__content p{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	.main .main__image-token{
 		top: -200px;
 	}
 	.main .main__image-token img {
 		width: 754px;
+	}
+	.main__buttons .main__button-launch {
+		padding: 14px 50px;
+		font-size: 1.2em;
+	}
+	.main__buttons .main__button-doc{
+		padding: 13px 32px;
+	}
+	.main__socials .main__soc{
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.main__socials .main__soc svg{
+		width: 25px;
 	}
 
 
@@ -61,23 +85,54 @@
 	.what-is-quasar__content .text-bold-two{
 		max-width: 400px;
 	}
+	.what-is-quasar .what-is-quasar__button{
+		padding: 15px 57px;
+		font-size: 1.2em;
+	}
 
 
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .how-it-works__titles h2{
-		font-size: 4.14rem;
+		font-size: 4rem;
+	}
+	.how-it-works .how-it-works__titles p{
+		font-size: 1.2rem;
 	}
 	.list-and-slide{
 		max-width: 248px;
 		padding: 44px 20px;
 		margin: 30px 10px 0 10px;
+		min-height: 338px;
+	}
+	.list-and-slide p{
+		margin: 34px 0 34px 0;
 	}
 
 
 	/* -------------------------------- whats-new ------------------------------- */
+	.whats-new__container{
+		padding: 0 60px;
+	}
+	.whats-new .whats-news__slider{
+		max-width: 870px;
+	}
 	.whats-new__title-right h2, .whats-new__container .whats-new__titles h2{
 		font-size: 3.5rem;
 		line-height: 60px;
+	}
+	.whats-mini-news__slider .whats-mini-news__image {
+		min-width: 278px;
+		min-height: 180px;
+		padding: 34px 20px;
+	}
+	.whats-news__slide .whats-news__image{
+		max-width: 280px;
+	}
+	.whats-news__slide .whats-news__content p{
+		font-size: 1rem;
+	}
+	.whats-news__slider .swiper-slide-active.whats-news__slide .whats-news__image{
+		padding: 34px 20px;
 	}
 }
 @media(max-width:1500px){
@@ -181,6 +236,9 @@
 
 
 	/* ------------------------------- whats-news ------------------------------- */
+	.whats-new__container {
+		padding: 0;
+	}
 	.whats-new .whats-news__slider{
 		left: 0;
 		max-width:900px;
@@ -602,7 +660,7 @@
 		left: 30px;
 	}
 	.how-it-works__lists .list-block:nth-child(3){
-		margin: -216px 7px 7px 7px;
+		margin: -200px 7px 7px 7px;
 	}
 	.how-it-works__lists .list-block:nth-child(3):before{
 		content:"Quasar strives to preserve and increase the income of each user";
@@ -701,7 +759,7 @@
 		text-align: center;
 	}
 }
-@media(max-width:760px){
+@media(max-width:775px){
 
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works__lists .list-block:nth-child(2):before{
@@ -734,6 +792,9 @@
 		color: #383838;
 		top: -110px;
 		left: 0;
+	}
+	.how-it-works__lists .list-block:nth-child(3){
+		margin: -215px 7px 7px 7px;
 	}
 	.how-it-works__lists .list-block:nth-child(3):before{
 		content:"Quasar strives to preserve and increase the income of each user";

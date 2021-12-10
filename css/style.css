@@ -192,7 +192,9 @@ body {
   height: 50px;
   padding: 7px;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.4s ease;
 }
 .main__socials .main__soc svg path{
@@ -250,11 +252,12 @@ body {
   font-size: 2.25rem;
 }
 .what-is-quasar__content{
-  margin: 90px 0 0 0;
+  margin: 90px auto 0 auto;
   display: grid;  
+  max-width: 1000px;
   grid-template-columns: 1fr 1fr ;
   position: relative;
-  left: 150px;
+  right: 30px;
 }
 .what-is-quasar__content .text-bold, .what-is-quasar__content .text-bold-two, .what-is-quasar__content .text-bold-three{
   width: 100%;
@@ -269,7 +272,7 @@ body {
 }
 .what-is-quasar__content .text-thin, .what-is-quasar__content .text-thin-two, .what-is-quasar__content .text-thin-three{
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: var(--roboto);
   font-weight: 300;
   color: #E8E8E8;
@@ -303,7 +306,7 @@ body {
 }
 .what-is-quasar__block.third{
   position: relative;
-  bottom:200px;
+  bottom:285px;
 }
 .what-is-quasar__content .what-is-quasar__block.first::after{
   content: "";
@@ -326,7 +329,7 @@ body {
   box-shadow:  inset 2px 2px 2px #1E1E1E;
   transform: rotate(360deg);
   right: -133px;
-  bottom: 69%;
+  bottom: 73.5%;
   background: #4F4F4F;
 }
 .what-is-quasar__content .what-is-quasar__block.third::after{
@@ -554,13 +557,7 @@ body {
 .video-circle-blocks{
   display: none;
 }
-.content-block{
-  overflow-y: auto;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .content-block::-webkit-scrollbar {
   width: 0;
 }
@@ -570,7 +567,7 @@ body {
 .block4{
   position: absolute;
   opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 }
 .block1.active,
 .block2.active,
@@ -665,7 +662,11 @@ color: #92EADA;
   border: 10px solid #323232;
   box-sizing: border-box;
   box-shadow: inset 3px 3px 4px #0C0C0C, inset -3px -3px 4px #0C0C0C, inset -3px -3px 4px #3E3E3E;
-  transition: 0.3s linear;
+
+  -webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-mox-transition: all 0.3s linear;
+  transition:all 0.3s linear;
   left: -55px;
   top: -55px;
   pointer-events: none;
@@ -681,14 +682,24 @@ color: #92EADA;
   box-shadow: inset 3px 3px 4px #0C0C0C, inset -3px -3px 4px #0C0C0C, inset -3px -3px 4px #3E3E3E;
   left: -95px;
   top: -95px;
-  transition: 0.3s linear;
+
+
+  -webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-mox-transition: all 0.3s linear;
+  transition:all 0.3s linear;
   pointer-events: none;
-  transition-delay: 0.3s;
+
+  transition-delay: 0.4s;
 }
 .economic-here__video-circle:hover::before{
+  -webkit-transform: scale(0.92);
+  -ms-transform: scale(0.92);
   transform: scale(0.92);
 }
 .economic-here__video-circle:hover::after{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 .economic-here__tap-ic{

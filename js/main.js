@@ -108,7 +108,7 @@ new Swiper('.DAO-is-changing__slider', {
         slidesPerView: 2,
         spaceBetween:26,
       },
-      1101:{
+      801:{
         slidesPerView: 3,
         spaceBetween:64,
       },
@@ -150,7 +150,7 @@ ecoClick.addEventListener('click', function(event){
 
 
 
-
+/* ---------------------------------- news ---------------------------------- */
 const sliderThumbs = new Swiper('.whats-mini-news__slider', {
   slidesPerView: 5,
   spaceBetween:63,

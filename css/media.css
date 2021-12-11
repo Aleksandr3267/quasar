@@ -23,7 +23,9 @@
 	.container{
 		padding: 0 160px;
 	}
-
+	.wrapper__menu-top {
+		padding: 15px;
+	}
 
 	/* --------------------------------- header --------------------------------- */
 	.top_menu nav{
@@ -373,7 +375,9 @@
 		overflow: hidden;
 		z-index: 1000;
 	}
-
+	.wrapper__menu-top {
+		left: 20px;
+	}
 
 	/* --------------------------------- header --------------------------------- */
 	.top_menu nav{
@@ -383,7 +387,7 @@
 		display: block;
 		position: absolute;
 		right: 20px;
-		top: 30px;
+		top: 20px;
 		width: 28px;
 		height: 20px;
 		z-index: 1000000000;
@@ -909,6 +913,10 @@
 
 }
 @media(max-width:600px){
+	.wrapper__menu-top {
+		padding: 10px;
+	}
+
 	
 	/* ---------------------------------- main ---------------------------------- */
 	.main .main__image-token{

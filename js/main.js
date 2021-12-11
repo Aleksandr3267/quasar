@@ -24,9 +24,40 @@ document.addEventListener('keyup', function(event){
   }
 });
 
+// ВЫДВИГАЕМОЕ МЕНЮ
+let top_menu = document.querySelector('.wrapper__menu-top');
+let nav_bar =  document.getElementById("navbar");
+
+$(document).ready(function () {
+  var previousScroll = 0,
+    navBarOrgOffset = $('#navbar').offset().top;
+  $(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > navBarOrgOffset) {
+      if (currentScroll > previousScroll) {
+        document.getElementById("navbar").style.top = "-150px";
+        document.getElementById("wrapper__m-top").classList.add('active');
+      } else {
+        document.getElementById("navbar").style.top = "-150px";
+        document.getElementById("wrapper__m-top").classList.add('active');
+      }
+    } else {
+      nav_bar.classList.remove('fixed');
+      document.getElementById("wrapper__m-top").classList.remove('active');
+      document.getElementById("navbar").style.top = "0px";
+    }
+    previousScroll = currentScroll;
+  });
+});
+
+top_menu.addEventListener('mouseover', function(){
+  nav_bar.classList.add('fixed');
+  document.getElementById("wrapper__m-top").classList.remove('active');
+  document.getElementById("navbar").style.top = "0px";
+});
+
 
 /* ----------------------------- animate circle ----------------------------- */
-
 window.onload = function(){
   const  parallax = document.querySelector('.wrapper');
   if(parallax){
@@ -66,16 +97,16 @@ window.onload = function(){
 
 $(function() {
   $(window).scroll(function() {
-  if($(this).scrollTop() >= 700) {
-  $('.wrapper__block').fadeIn();
-  } else {
-  $('.wrapper__block').fadeOut();
-  }
+    if($(this).scrollTop() >= 700) {
+    $('.wrapper__block').fadeIn();
+    } else {
+    $('.wrapper__block').fadeOut();
+    }
   });
   $('.wrapper__block').click(function() {
-  $('body,html').animate({scrollTop:0},700);
+    $('body,html').animate({scrollTop:0},700);
   });
-  });
+});
 
 
 $("a.wrapper__tre").on("click", function(e){

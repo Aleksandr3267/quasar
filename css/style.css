@@ -44,13 +44,26 @@ body {
   padding: 0 200px;
 }
 
-
+.wrapper__menu-top{
+  position: fixed;
+  padding: 30px;
+  background: #222222 ;
+  z-index: 1000000000;
+  transform: translateY(-100%);
+  transition: 0.4s ease;
+  cursor: pointer;
+  left: 46px;
+}
+#wrapper__m-top.active{
+  transform: translateY(0);
+}
 /*-------------------------------------------------------------------------*/
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 118px;
 }
 
 /*НАВИГАЦИЯ*/
@@ -119,10 +132,13 @@ body {
 #navbar {
   width: 100%;
   position: relative;
-  transition: all 0.7s ease;
+  transition: all 0.4s ease;
   z-index: 10000;
 }
-
+#navbar.fixed {
+  position: fixed;
+  z-index: 10000;
+}
 /*main*/
 .main{
   position: relative;

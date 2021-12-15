@@ -20,8 +20,13 @@
 	}
 }
 @media(max-width:1592px){
+	.wrapper__block .wrapper__tre svg{
+		width: 50px;
+	}
+
+
 	.container{
-		padding: 0 160px;
+		padding: 0 200px;
 	}
 	.wrapper__menu-top {
 		padding: 15px;
@@ -29,44 +34,81 @@
 
 	/* --------------------------------- header --------------------------------- */
 	.top_menu nav{
-		padding: 15px 200px;
+		padding: 22px 200px;
 	}
 	.top_menu .top_logo a img{
 		max-width: 150px;
 	}
+	.top_menu .menu{
+		left: -40px;
+		position: relative;
+	}
+	.top_menu nav .menu ul li a{
+		font-size: 0.9rem;
+		letter-spacing: 0.5px;
+		margin: 0 25px;
+	}
+	.my-token img{
+		width: 25px;
+	}
+	.my-token .my-token__sum{
+		font-size: 0.9rem;
+	}
 	.top_menu .button-launch{
-		padding: 11px 45px;
+		padding: 11px 55px;
 		font-size: 1.2em;
+		border-radius: 8px;
 	}
 
 
 	/* ---------------------------------- main ---------------------------------- */
 	.main .main__content{
-		margin: 213px 0 0 0;
+		margin: 210px 0 0 0;
 	}
 	.main .main__content h1{
-		font-size: 3.2rem;
+		font-size: 3.4rem;
 	}
 	.main .main__content p{
-		font-size: 1.8rem;
+		font-size: 1.9rem;
+		line-height: 32px;
+		margin: 60px 0 0 0;
+		max-width: 520px;
 	}
 	.main .main__image-token{
-		top: -200px;
+		top: -235px;
+		right: 73px;
 	}
 	.main .main__image-token img {
-		width: 754px;
+		width: 690px;
+	}
+	.main .main__buttons{
+		margin: 55px 0 0 0;
+	
 	}
 	.main__buttons .main__button-launch {
-		padding: 14px 50px;
+		padding: 12px 53px;
 		font-size: 1.2em;
+		font-weight: 500;
+		border-radius: 8px;
 	}
 	.main__buttons .main__button-doc{
-		padding: 13px 32px;
+		padding: 10px 38px;
+		font-size: 0.75rem;
+		border-radius: 8px;
+		margin: 0 0 0 35px;
+	}
+	.main__socials{
+		margin: 53px 0 0 0;
 	}
 	.main__socials .main__soc{
 		width: 40px;
 		height: 40px;
-		
+	}
+	.main__socials .main__soc:nth-child(2){
+		margin: 0 0 0 24px;
+	}
+	.main__socials .main__soc:last-child{
+		margin: 0 0 0 24px;
 	}
 	.main__socials .main__soc svg{
 		width: 25px;
@@ -74,22 +116,76 @@
 
 
 	/* ----------------------------- what-is-quasar ----------------------------- */
+	.what-is-quasar{
+		padding: 25px 0 0px 0;
+	}
+	.what-is-quasar__title{
+		font-size: 1.93rem;
+		position: relative;
+		top: 75px;
+	}
+	.what-is-quasar__content{
+		margin: 75px auto 0 auto;
+		top: 80px;
+	}
+	.what-is-quasar__block.first{
+		left: 80px;
+	}
+	.what-is-quasar__block.third {
+		left: 80px;
+	}
+	.what-is-quasar__content .text-thin-three{
+		left: 230px;
+		max-width: 428px;
+	}
 	.what-is-quasar__content .text-bold, .what-is-quasar__content .text-bold-two, .what-is-quasar__content .text-bold-three{
 		font-size: 3.5rem;
+		line-height: 60px;
+	}
+	.what-is-quasar__content .text-bold{
+		max-width: 500px;
 	}
 	.what-is-quasar__content .text-thin, .what-is-quasar__content .text-thin-two, .what-is-quasar__content .text-thin-three{
 		font-size: 1.3rem;
 	}
-
+	.what-is-quasar__content .text-thin{
+		bottom: 53px;
+		max-width: 440px;
+		left: 230px;
+	}
 	.what-is-quasar__block.third{
 		position: relative;
-		bottom:200px;
+		bottom:220px;
+	}
+	.what-is-quasar__content .what-is-quasar__block.first::after{
+		top: 43px;
+		right: 95px;
+		max-width: 155px;
 	}
 	.what-is-quasar__content .what-is-quasar__block.first::before{
-		bottom: 69%;
+		bottom: 71.3%;
+		right: -2px;
+		max-width: 175px;
+	}
+	.what-is-quasar__content .what-is-quasar__block.third::before{
+		right: 0px;
+		width: 754px;
+	}
+	.what-is-quasar__content .what-is-quasar__block.third::after{
+		right: -141px;
+		max-width: 283px;
 	}
 	.what-is-quasar__content .text-bold-two{
 		max-width: 400px;
+		right: 75px;
+	}
+	.what-is-quasar__content .text-thin-two {
+		left: 115px;
+		max-width: 190px;
+	}
+	.what-is-quasar .what-is-quasar__but{
+		position: relative;
+		top: -70px;
 	}
 	.what-is-quasar .what-is-quasar__button{
 		padding: 15px 57px;
@@ -98,47 +194,172 @@
 
 
 	/* ------------------------------ how-it-works ------------------------------ */
+	.how-it-works{
+		padding: 90px 0 140px 0;
+	}
 	.how-it-works .how-it-works__titles h2{
-		font-size: 4rem;
+		font-size: 3.88rem;
+		margin: 0;
+		line-height: 68px;
+	}
+	.how-it-works .how-it-works__titles h2::after{
+		left: 245px;
+		max-width: 150px;
+		height: 4px;
 	}
 	.how-it-works .how-it-works__titles p{
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+		left: 100px;
+	}
+	.how-it-works__lists{
+		justify-content: space-between;
+		margin: 25px 0 0 0;
 	}
 	.list-and-slide{
-		max-width: 248px;
-		padding: 44px 20px;
+		max-width: 225px;
+		padding: 30px 20px;
 		margin: 30px 10px 0 10px;
-		min-height: 338px;
+		min-height: 270px;
+	}
+	.list-and-slide h3{
+		font-size: 1.33rem;
 	}
 	.list-and-slide p{
-		margin: 34px 0 34px 0;
+		margin: 25px 0 34px 0;
+		line-height: 16px;
+		font-size: 1rem;
+	}
+	.list-and-slide .list-num, .swiper-slide .list-num{
+		width: 30px;
+		height: 30px;
+		font-size: 0.8rem;
+	}
+	.how-it-works__lists .list-block::after{
+		bottom: -65px;
+	}
+	.how-it-works__scrollbar{
+		top: 60px;
+	}
+
+
+	/* ------------------------------ economic-here ----------------------------- */
+	.economic-here{
+		padding: 90px 0 136px 0;
+	}
+	.economic-here .economic-here__titles{
+		font-size: 1.9rem;
+		max-width: 450px;
+		line-height: 33px;
+	}
+	.economic-here__content{
+		margin: 50px 0 0 0;
+	}
+	.content-block h3{
+		font-size: 1.9rem;
+	}
+	.content-block p {
+		font-size: 1.3rem;
+		line-height: 22px;
+		max-width: 180px;
+	}
+	.economic-here__video-circle {
+		width: 347px;
+		height: 347px;
+	}
+	.economic-here__video-circle::before {
+		width: 458px;
+		height: 458px;
+	}
+	.economic-here__video-circle::after{
+		width: 540px;
+		height: 540px;
+	}
+	.content-block h3 {
+		color: #383838;
+		font-size: 1.7rem;
+	}
+	.myVideo-block{
+		width: 348px;
+		height: 348px;
+	}
+
+
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	.DAO-is-changing__titles h2{
+		font-size: 4rem;
+		line-height: 68px;
+		max-width: 324px;
 	}
 
 
 	/* -------------------------------- whats-new ------------------------------- */
 	.whats-new__container{
-		padding: 0 60px;
+		padding: 0 160px;
+		max-width: 1440px;
 	}
 	.whats-new .whats-news__slider{
-		max-width: 870px;
+		max-width: 750px;
+		left: -60px;
+		padding: 0px 0 20px 0;
 	}
 	.whats-new__title-right h2, .whats-new__container .whats-new__titles h2{
 		font-size: 3.5rem;
 		line-height: 60px;
 	}
-	.whats-mini-news__slider .whats-mini-news__image {
-		min-width: 278px;
-		min-height: 180px;
-		padding: 34px 20px;
-	}
 	.whats-news__slide .whats-news__image{
-		max-width: 280px;
-	}
-	.whats-news__slide .whats-news__content p{
-		font-size: 1rem;
+		max-width: 230px;
 	}
 	.whats-news__slider .swiper-slide-active.whats-news__slide .whats-news__image{
 		padding: 34px 20px;
+		height: 150px;
+		min-height: 150px;
+		min-width: 230px;
+		max-width: 230px;
+	}
+	.whats-news__slide .whats-news__content{
+		margin: 0 0 0 50px;
+	}
+	.whats-news__slide .whats-news__content p{
+		font-size: 0.95rem;
+		line-height: 16px;
+		max-width: 335px;
+	}
+	.whats-news__slide .whats-news__image p, .whats-mini-news__image p{
+		font-size: 1rem;
+		line-height: 18px;
+	}
+	.whats-news__slide .whats-news__content button{
+		padding: 5px 35px;
+		font-size: 1rem;
+		margin: 30px 0 0 0;
+	}
+	.whats-new .swiper-container-horizontal>.swiper-scrollbar{
+		left: 30px;
+	}
+	/* mini Thumbs----------------------------*/
+	.whats-mini-news__slider .whats-mini-news__image {
+		min-width: 230px;
+		max-width: 230px;
+		min-height: 150px;
+		padding: 34px 20px;
+	}
+	.whats-mini-news__slider{
+		padding: 15px 0;
+	}
+	.whats-news__slider-block{
+		display: flex;
+		margin: 0 auto;
+	}
+	
+
+	/* --------------------------------- footer --------------------------------- */
+	.footer__container .footer__left .footer__logo img{
+		width: 155px;
+	}
+	.footer__center ul li a{
+		font-size: 0.9rem;
 	}
 }
 @media(max-width:1500px){
@@ -150,8 +371,108 @@
 
 	
 	/* ----------------------------- DAO-is-changing ---------------------------- */
+	
+	.DAO-is-changing .swiper-container {
+		max-width: 1460px;
+		padding: 40px 10px;
+	}
+	.DAO-is-changing__titles h2{
+		margin: 0 0 0 180px;
+		font-size: 3.8rem;
+		line-height: 65px;
+	}
+
+	.DAO-is-changing__lists .sub-title, .DAO-is-changing .DAO-is-changing__sub{
+		font-size: 1.3rem;
+		line-height: 22px;
+	}
+	.DAO-is-changing__lists .sub-title::before, .DAO-is-changing .DAO-is-changing__sub::before{
+		max-width: 140px;
+		left: -120px;
+	}
+	.DAO-is-changing .image_slider_wrapper .swiper-slide .image-slider__image{
+		min-width: 260px;
+		max-height: 220px;
+		min-height: 220px;
+
+		padding: 30px 25px;
+	}
+	.image_slider_wrapper .DAO-is-changing__slide p{
+		font-size: 0.93rem;
+		line-height: 16px;
+	}
+	
+
+
+}
+@media(max-width:1400px){
+	.container{
+		max-width: 1384px;
+		padding: 0 46px;
+	}
+
+
+	/* --------------------------------- header --------------------------------- */
+	.top_menu nav {
+		padding: 15px 46px;
+	}
+
+
+	/* ------------------------------ how-it-works ------------------------------ */
+	.how-it-works .how-it-works__titles h2{
+		margin: 0 0 0 30px;
+	}
+	.how-it-works__lists{
+		flex-wrap:nowrap
+	}
+	.list-and-slide{
+		max-width: 228px;
+		padding: 20px 30px;
+		margin: 30px 30px 0 30px;
+		
+	}
+	.list-and-slide p{
+		margin: 15px 0 34px 0;
+	}
+	.how-it-works__lists .list-block::after{
+		display: none;
+	}
+	.how-it-works__lists .list-and-slide:hover{
+		transform: none;
+	}
+	.how-it-works__scrollbar{
+		display: none;
+	}
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	/* .DAO-is-changing {
+		padding: 131px 46px 139px 46px;
+	} */
+	.DAO-is-changing__titles h2{
+		margin: 0 0 0 80px;
+	}
+
+
+	/* ------------------------------- whats-news ------------------------------- */
+	.whats-new__container {
+		padding: 0;
+	}
+	.whats-new .whats-news__slider{
+		left: 0;
+		max-width:900px;
+	}
+	.whats-new .swiper-container-horizontal>.swiper-scrollbar{
+		width: 90%;
+	}
+	.whats-mini-news__slider{
+		display: none;
+	}
+}
+
+@media(max-width:1360px){
 	.DAO-is-changing {
-		padding: 131px 200px 139px 200px;
+		padding: 131px 46px 139px 46px
 	}
 	.DAO-is-changing__container{
 		flex-direction: column;
@@ -164,6 +485,7 @@
 		font-size: 3rem;
 		margin: 0;
 		line-height: 50px;
+		max-width: 364px;
 	}
 	.DAO-is-changing .DAO-is-changing__sub{
 		display: flex;
@@ -172,8 +494,7 @@
 		max-width: 700px;
 	}
 	.DAO-is-changing .DAO-is-changing__sub::before{
-		left: -120px;
-		
+		left: -100px;
 	}
 	.DAO-is-changing__lists .sub-title{
 		display: none;
@@ -193,72 +514,15 @@
 	.DAO-is-changing .swiper-container-horizontal>.swiper-scrollbar{
 		width: 80%;
 	}
-
-
+	.DAO-is-changing .image_slider_wrapper .swiper-slide .image-slider__image{
+		min-width: auto;
+		max-height: 220px; 
+		min-height: 300px;
+	}
+	.image_slider_wrapper .DAO-is-changing__slide p{
+		font-size: 1.1rem;
+	}
 }
-@media(max-width:1400px){
-	.container{
-		max-width: 1384px;
-		padding: 0 46px;
-	}
-
-
-	/* --------------------------------- header --------------------------------- */
-	.top_menu nav {
-		padding: 15px 46px;
-	}
-
-
-	/* ----------------------------- what-is-quasar ----------------------------- */
-	.what-is-quasar__content .what-is-quasar__block.third::before{
-		width: 900px;
-	}
-
-
-	/* ------------------------------ how-it-works ------------------------------ */
-	.how-it-works .how-it-works__titles h2{
-		margin: 0 0 0 30px;
-	}
-	.list-and-slide{
-		max-width: 278px;
-		padding: 44px 30px;
-		margin: 30px 30px 0 30px;
-	}
-	.how-it-works__lists .list-block::after{
-		display: none;
-	}
-	.how-it-works__lists .list-and-slide:hover{
-		transform: none;
-	}
-	.how-it-works__scrollbar{
-		display: none;
-	}
-
-
-	/* ----------------------------- DAO-is-changing ---------------------------- */
-	.DAO-is-changing {
-		padding: 131px 46px 139px 46px;
-	}
-
-
-	/* ------------------------------- whats-news ------------------------------- */
-	.whats-new__container {
-		padding: 0;
-	}
-	.whats-new .whats-news__slider{
-		left: 0;
-		max-width:900px;
-	}
-	.whats-new .swiper-container-horizontal>.swiper-scrollbar{
-		width: 90%;
-	}
-	.whats-mini-news__slider{
-		display: none;
-	}
-
-
-}
-
 @media(max-width:1300px){
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .how-it-works__titles h2{
@@ -283,11 +547,20 @@
 
 
 	/* ----------------------------- what-is-quasar ----------------------------- */
+	.what-is-quasar{
+		padding: 25px 0 88px 0;
+	}
 	.what-is-quasar__content{
 		display: flex;
 		flex-direction: column;
 		left: 0;
 		margin: 88px auto 0 auto;
+	}
+	.what-is-quasar__block.first {
+		left: 0;
+	}
+	.what-is-quasar__block.third {
+		left: 0;
 	}
 	.what-is-quasar__content .what-is-quasar__block{
 		display: flex;
@@ -340,6 +613,14 @@
 		margin: 86px auto 0 auto;
 		padding: 18px 60px;
 		max-width: 230px;
+		top: 0;
+	}
+
+	.what-is-quasar .what-is-quasar__but{
+		top: 0;
+	}
+	.what-is-quasar .what-is-quasar__button{
+		margin: 166px auto 0 auto;
 	}
 
 
@@ -358,6 +639,17 @@
 	
 }
 @media(max-width:1100px){
+
+	/* ------------------------------ how-it-works ------------------------------ */
+	.list-and-slide {
+		margin: 30px 0 0px 0;
+	}
+	.list-and-slide {
+		max-width: 190px;
+		padding: 20px 15px;
+	}
+
+
 	/* ----------------------------- DAO-is-changing ---------------------------- */
 	.DAO-is-changing .swiper-container {
 		max-width: 800px;
@@ -440,6 +732,7 @@
 		background: linear-gradient(180deg, #373737 0%, #222222 100%);
 		padding: 50px 0 150px 0;
 		top: 0;
+		left:auto;
 		right: -100%;
 		transition: all 0.4s ease 0s;
 		overflow: auto;
@@ -447,6 +740,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		
 	}
 	.my-token {
 		display: none;
@@ -674,7 +968,9 @@
 		display: none;
 	}
 	.how-it-works__lists{
+		flex-wrap: wrap;
 		margin: 0;
+		justify-content: center;
 	}
 	.how-it-works__lists .list-block{
 		margin: 7px 7px;
@@ -699,7 +995,7 @@
 		left: 30px;
 	}
 	.how-it-works__lists .list-block:nth-child(3){
-		margin: -200px 7px 7px 7px;
+		margin: -187px 7px 7px 7px;
 	}
 	.how-it-works__lists .list-block:nth-child(3):before{
 		content:"Quasar strives to preserve and increase the income of each user";
@@ -710,6 +1006,11 @@
 		bottom: -80px;
 		left: 30px;
 		line-height: 22px;
+	}
+	.list-and-slide {
+		max-width: 278px;
+		padding: 44px 30px;
+		margin: 30px 30px 0 30px;
 	}
 	.list-and-slide p{
 		margin: 44px 0 50px 0;
@@ -730,8 +1031,8 @@
 	}
 
 	.whats-news__slide .whats-news__image{
-		height: 200px;
-		padding: 44px 30px;
+		height: 150px;
+		padding: 34px 20px;
 	}
 	.whats-news__slide .whats-news__image:hover{
 		transform:none;
@@ -861,23 +1162,7 @@
 	}
 
 
-	/* ------------------------------ economic-here ----------------------------- */
-	.economic-here__video-circle {
-		width: 347px;
-		height: 347px;
-	}
-	.economic-here__video-circle::before {
-		width: 458px;
-		height: 458px;
-	}
-	.economic-here__video-circle::after{
-		width: 540px;
-		height: 540px;
-	}
-	.content-block h3 {
-		color: #383838;
-		font-size: 1.7rem;
-	}
+
 
 
 	/* ----------------------------- DAO-is-changing ---------------------------- */
@@ -984,29 +1269,9 @@
 
 
 	/* ------------------------------ economic-here ----------------------------- */
-	/* .economic-here__video-circle {
-		width: 217px;
-		height: 217px;
-	} */
-	/* .economic-here__video-circle::before {
-		width: 328px;
-		height: 328px;
-	}
-	.economic-here__video-circle::after{
-		width: 410px;
-		height: 410px;
-	} */
 	.content-block{
 		width: 60%;
 	}
-	/* .content-block h3 {
-		color: #383838;
-		font-size: 1.2rem;
-	}
-	.content-block p{
-		font-size: 0.7rem;
-	} */
-	
 
 
 	/* -------------------------------- whats-new ------------------------------- */
@@ -1068,6 +1333,10 @@
 	.content-block p{
 		font-size: 0.9rem;
 	}
+	.myVideo-block{
+		width: 258px;
+		height: 258px;
+	}
 }
 @media(max-width:360px){
 
@@ -1098,6 +1367,11 @@
 	.list-and-slide p {
 		font-size: 0.7rem;
 		margin: 10px 0 40px 0;
+	}
+
+
+	.whats-news__slider .swiper-slide-active.whats-news__slide .whats-news__image{
+		min-width: 0;
 	}
 	
 }

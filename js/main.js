@@ -155,42 +155,102 @@ new Swiper('.DAO-is-changing__slider', {
 
 /* ------------------------------ economic-here ----------------------------- */
 
-let vid = document.getElementById("myVideo");
+
+
+window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
+var canvas = document.getElementById("space");
+var c = canvas.getContext("2d");
+var numStars = 1900;
+var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
+var focalLength = canvas.width *2;
+var warp = 0;
+var centerX, centerY;
+var stars = [], star;
+var i;
+let animate=false;
+
+
 let sdf = document.querySelector('.economic-here__video-circle');
+sdf.addEventListener('mouseenter',  function(){
+  animate = true;
+  executeFrame();
+});
+sdf.addEventListener('mouseleave', function(){
+  animate = false;
+});
 
-  sdf.addEventListener('mouseover', function(){
-    vid.play();
-  })
-  sdf.onmouseout = function(){
-  vid.load();
+
+initializeStars();
+function executeFrame(){
+  if(animate)
+    requestAnimFrame(executeFrame);
+    moveStars();
+    drawStars();
+}
+function initializeStars(){
+  centerX = canvas.width / 2;
+  centerY = canvas.height / 2;
+  stars = [];
+  for(i = 0; i < numStars; i++){
+    star = {
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      z: Math.random() * canvas.width,
+      o: '0.'+Math.floor(Math.random() * 99) + 1
+    };
+    stars.push(star);
   }
+}
+function moveStars(){
+  for(i = 0; i < numStars; i++){
+    star = stars[i];
+    star.z--;
+    if(star.z <= 0){
+      star.z = canvas.width;
+    }
+  }
+}
+function drawStars(){
+  var pixelX, pixelY, pixelRadius;
+  // Resize to the screen
+  if(canvas.width != window.innerWidth || canvas.width != window.innerWidth){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    initializeStars();
+  }
+  if(warp==0)
+  {c.fillStyle = "rgba(0,10,20,1)";
+  c.fillRect(0,0, canvas.width, canvas.height);}
+  c.fillStyle = "rgba(209, 255, 255, "+radius+")";
+  for(i = 0; i < numStars; i++){
+    star = stars[i];
+    pixelX = (star.x - centerX) * (focalLength / star.z);
+    pixelX += centerX;
+    pixelY = (star.y - centerY) * (focalLength / star.z);
+    pixelY += centerY;
+    pixelRadius = 3 * (focalLength / star.z);
+    if (document.documentElement.clientWidth < 950) {
+      pixelRadius = 2 * (focalLength / star.z);
+    }if (document.documentElement.clientWidth < 550) {
+      pixelRadius = 1 * (focalLength / star.z);
+    }
+    
+    c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
+    c.fillStyle = "rgba(209, 255, 255, "+star.o+")";
+  }
+}
+executeFrame();
 
 
 
-// let ecoClick = document.querySelector('.economic-here');
-// let eco1 = document.querySelector('.block1')
-// let eco2 = document.querySelector('.block2')
-// let eco3 = document.querySelector('.block3')
-// let eco4 = document.querySelector('.block4')
-// ecoClick.addEventListener('click', function(event){
-//   if (document.documentElement.clientWidth < 1080) {
-  
-//   if(eco4.classList.contains('active')){
-//     eco4.classList.remove('active');
-//     eco1.classList.add('active');
-//   }else if(eco1.classList.contains('active')){
-//     eco1.classList.remove('active');
-//     eco2.classList.add('active');
-//   }else if(eco2.classList.contains('active')){
-//     eco2.classList.remove('active');
-//     eco3.classList.add('active');
-//   }else if(eco3.classList.contains('active')){
-//     eco3.classList.remove('active');
-//     eco4.classList.add('active');
-//   }
 
-// }
-// });
+
+
+
+
+
+
+
 
 
 

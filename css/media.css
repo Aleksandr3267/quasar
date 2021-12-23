@@ -288,6 +288,11 @@
 		width: 348px;
 		height: 348px;
 	}
+	.space-button{
+		font-size: 1.2rem;
+		width: 128px;
+		height: 128px;
+	}
 
 
 
@@ -1386,6 +1391,11 @@
 	.myVideo-block{
 		width: 258px;
 		height: 258px;
+	}
+	.space-button{
+		font-size: 1rem;
+		width: 108px;
+		height: 108px;
 	}
 }
 @media(max-width:360px){

@@ -730,6 +730,7 @@ color: #92EADA;
   height: 100%;
   opacity: .8;
   border-radius:50%;
+  overflow: hidden;
 }
 .space-block::after{
   content: "";
@@ -740,13 +741,13 @@ color: #92EADA;
   left: 0;
   border-radius:50%;
   display: inline-block;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); 
   background: rgba(0, 0, 0, 0.5);
   box-shadow: inset 5px 5px 4px #000000, inset -5px -5px 4px #2F2F2F;
 }
 #space{
-  width:100%;
-  max-width: 100%;
+  width:200%;
+  left: -50%;
   height: 100%;
   border-radius:50%;
   position: relative;

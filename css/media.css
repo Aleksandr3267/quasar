@@ -976,6 +976,10 @@
 			transform: translateY(0px);
 		}
 	}
+	#space{
+		width:100%;
+		left: 0;
+	}
 
 
 	/* --------------------------------- footer --------------------------------- */
@@ -1328,6 +1332,12 @@
 	/* ------------------------------ economic-here ----------------------------- */
 	.content-block{
 		width: 60%;
+	}
+	#space {
+		width: 100%;
+		left: 0;
+		height: auto;
+		bottom: 40%;
 	}
 
 

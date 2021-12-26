@@ -160,7 +160,7 @@ new Swiper('.DAO-is-changing__slider', {
 window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
 var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
-var numStars = 2900;
+var numStars = 1500;
 var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
 var focalLength = canvas.width *2;
 var warp = 0;
@@ -234,9 +234,13 @@ function drawStars(){
     }if (document.documentElement.clientWidth < 550) {
       pixelRadius = 1 * (focalLength / star.z);
     }
-    
-    c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
+    c.beginPath();
+    c.arc(pixelX, pixelY, pixelRadius, 0, 2*Math.PI, false);
     c.fillStyle = "rgba(209, 255, 255, "+star.o+")";
+    c.fill();
+
+
+
   }
 }
 executeFrame();

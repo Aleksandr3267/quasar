@@ -728,6 +728,7 @@ color: #92EADA;
   position: absolute;
   width:100%;
   height: 100%;
+  opacity: .8;
   border-radius:50%;
 }
 .space-block::after{
@@ -739,8 +740,9 @@ color: #92EADA;
   left: 0;
   border-radius:50%;
   display: inline-block;
-  backdrop-filter: blur(.5px);
+  backdrop-filter: blur(1px);
   background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 5px 5px 4px #000000, inset -5px -5px 4px #2F2F2F;
 }
 #space{
   width:100%;
@@ -767,7 +769,8 @@ color: #92EADA;
   transition: 0.4s ease;
 }
 .space-button:hover{
-  box-shadow: 4px 4px 8px #000000, -4px -4px 8px #383838, inset 4px 4px 3px #151515, inset -4px -4px 4px #474747;
+  color: #B079F7;
+  box-shadow: 1px 1px 4px #0C1016, -1px -1px 4px #393939, inset -4px -4px 4px #403F3F, inset 4px 4px 4px #141414;
 }
 
 

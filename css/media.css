@@ -22,6 +22,7 @@
 @media(max-width:1592px){
 	.wrapper__block{
 		right: 110px;
+		bottom: 70px;
 	}
 	.wrapper__block .wrapper__tre svg{
 		width: 50px;
@@ -997,6 +998,7 @@
 
 	.wrapper__block {
 		right: 20px;
+		bottom: 20px;
 	}
 
 	/* ------------------------------ how-it-works ------------------------------ */

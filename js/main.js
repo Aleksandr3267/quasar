@@ -160,7 +160,7 @@ new Swiper('.DAO-is-changing__slider', {
 window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
 var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
-var numStars = 1900;
+var numStars = 2900;
 var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
 var focalLength = canvas.width *2;
 var warp = 0;

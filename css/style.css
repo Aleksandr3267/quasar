@@ -741,7 +741,7 @@ color: #92EADA;
   left: -1px;
   border-radius:50%;
   display: inline-block;
-  backdrop-filter: blur(4px); 
+  backdrop-filter: blur(3px); 
   background: rgba(0, 0, 0, 0.6);
   box-shadow: inset 5px 5px 4px #000000, inset -5px -5px 4px #2F2F2F;
 }

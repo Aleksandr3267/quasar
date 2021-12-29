@@ -735,14 +735,14 @@ color: #92EADA;
 .space-block::after{
   content: "";
   position: absolute;
-  width:100%;
-  height: 100%;
+  width:101%;
+  height: 101%;
   top: 0;
-  left: 0;
+  left: -1px;
   border-radius:50%;
   display: inline-block;
-  backdrop-filter: blur(1px); 
-  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px); 
+  background: rgba(0, 0, 0, 0.7);
   box-shadow: inset 5px 5px 4px #000000, inset -5px -5px 4px #2F2F2F;
 }
 #space{
@@ -768,6 +768,7 @@ color: #92EADA;
   box-shadow: 3px 3px 4px #0C1016, -3px -3px 4px #414141;
   border-radius: 50%;
   transition: 0.4s ease;
+  border: 1px solid rgba(233, 136, 235, 0.3);
 }
 .space-button:hover{
   color: #B079F7;
@@ -1056,7 +1057,7 @@ color: #92EADA;
   cursor: pointer;
 }
 .whats-mini-news__slider .whats-mini-news__image:hover{
-  opacity: 0.5;
+  transform: translateY(-15px);
 }
 /* ---- whats-new__title-right ------ */
 .whats-new__title-right h2, .whats-new__container .whats-new__titles h2{

@@ -294,6 +294,10 @@
 		width: 128px;
 		height: 128px;
 	}
+	.space-button-bg{
+		width: 158px;
+		height: 158px;
+	}
 
 
 
@@ -976,10 +980,6 @@
 			transform: translateY(0px);
 		}
 	}
-	#space{
-		width:100%;
-		left: 0;
-	}
 
 
 	/* --------------------------------- footer --------------------------------- */
@@ -1333,11 +1333,9 @@
 	.content-block{
 		width: 60%;
 	}
-	#space {
-		width: 100%;
-		left: 0;
-		height: auto;
-		bottom: 40%;
+	.space-button-bg {
+		width: 138px;
+		height: 138px;
 	}
 
 

@@ -740,8 +740,8 @@ color: #92EADA;
   left: 0px;
   border-radius:50%;
   display: inline-block;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px); 
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); 
   background: rgba(0, 0, 0, 0.5);
   box-shadow: inset 5px 5px 4px #000000, inset -5px -5px 4px #2F2F2F;
 }

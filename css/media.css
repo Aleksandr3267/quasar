@@ -935,6 +935,9 @@
 	.economic-here__video-circle {
 		background: #9C3D3D;
 		box-shadow: inset 5px 5px 4px #151515, inset -5px -5px 4px #c05656;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.video-circle-blocks{
 		display: flex;

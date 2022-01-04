@@ -570,11 +570,15 @@ body {
 .video-circle-blocks{
   display: none;
 }
+
+
+.content-block{
+  width: 100%;
+  max-width: 210px;
+}
 .content-block::-webkit-scrollbar {
   width: 0;
 }
-
-
 
 .content-block h3{
   font-size: 2.25rem;
@@ -787,16 +791,8 @@ color: #92EADA;
   box-shadow: 1px 1px 4px #0C1016, -1px -1px 4px #393939, inset -4px -4px 4px #403F3F, inset 4px 4px 4px #141414;
 }
 
-.content-block{
-  width: 100%;
-  max-width: 210px;
-  margin: 20px;
-}
 .video-circle-blocks{
   display: none;
-}
-.content-block::-webkit-scrollbar {
-  width: 0;
 }
 .block1,
 .block2,

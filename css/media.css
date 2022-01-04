@@ -956,22 +956,26 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 		width: 100%;
 		height: 100%;
 		position: relative;
 	}
-	.content-block {
+	.content-blockM {
 		max-width:160px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
-	.content-block h3 {
+	.content-blockM h3 {
+		font-size: 1.8rem;
 		color: #383838;
 		text-align: center;
+		font-family: var(--montserrat);
+		font-weight: 600;
 	}
-	.content-block p{
+	.content-blockM p{
+		color: #D6D6D6;
+		font-family: var(--roboto);
 		font-size: 1.1rem;
 		line-height: 18px;
 		margin: 22px 0 0 10px;
@@ -1101,31 +1105,6 @@
 	.list-and-slide p{
 		margin: 44px 0 50px 0;
 	}
-
-
-	/* -------------------------------- whats-new ------------------------------- */
-	/* .whats-new__container .whats-new__titles h2{
-		font-size: 2rem;
-		line-height: 30px;
-	}
-	.whats-new .whats-news__slider{
-		padding: 0px 0 40px 0;
-	}
-	.whats-news__slider .whats-news__slide{
-		flex-direction: column;
-		align-items: center;
-	}
-	.whats-news__slide .whats-news__content{
-		margin: 50px 0 0 0;
-	}
-
-	.whats-news__slide .whats-news__image{
-		height: 150px;
-		padding: 34px 20px;
-	}
-	.whats-news__slide .whats-news__image:hover{
-		transform:none;
-	} */
 
 
 	/* --------------------------------- footer --------------------------------- */
@@ -1421,10 +1400,10 @@
 	}
 
 
-	.content-block h3 {
+	.content-blockM h3 {
 		font-size: 1.7rem;
 	}
-	.content-block p{
+	.content-blockM p{
 		font-size: 1rem;
 		line-height: 16px;
 	}
@@ -1444,9 +1423,7 @@
 
 
 	/* ------------------------------ economic-here ----------------------------- */
-	.content-block{
-		width: 60%;
-	}
+	
 
 
 	/* -------------------------------- whats-new ------------------------------- */
@@ -1523,10 +1500,10 @@
 
 
 
-	.content-block h3 {
+	.content-blockM h3 {
 		font-size: 1.2rem;
 	}
-	.content-block p{
+	.content-blockM p{
 		font-size: 0.9rem;
 		margin: 12px 0 0 10px;
 	}

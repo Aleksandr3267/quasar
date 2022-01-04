@@ -950,14 +950,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		top: 7px;
 	}
 	.video-circle-blocks{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		width: 100%;
+		height: 100%;
+		position: relative;
 	}
 	.content-block {
-		height: 65%;
 		max-width:160px;
 		display: flex;
 		flex-direction: column;

@@ -572,12 +572,9 @@ body {
   max-width: 210px;
   margin: 20px;
 }
-
-
 .video-circle-blocks{
   display: none;
 }
-
 .content-block::-webkit-scrollbar {
   width: 0;
 }
@@ -649,6 +646,11 @@ color: #92EADA;
   position: relative;
   display: inline-block;
   z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -717,13 +719,14 @@ color: #92EADA;
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 7px;
 }
-.economic-here__video-circle:hover .economic-here__video-line-large{
-  -webkit-transform: scale(0.92);
-  -ms-transform: scale(0.92);
-  transform: scale(0.92);
+.economic-here__video-line-large.active{
+  -webkit-transform: scale(0.90);
+  -ms-transform: scale(0.90);
+  transform: scale(0.90);
 }
-.economic-here__video-circle:hover .economic-here__video-line-small{
+.economic-here__video-line-small.active{
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
   transform: scale(0.92);

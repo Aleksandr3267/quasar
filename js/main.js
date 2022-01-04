@@ -171,12 +171,22 @@ let animate=false;
 
 
 let sdf = document.querySelector('.economic-here__video-circle');
+// lines
+let lineLa = document.querySelector('.economic-here__video-line-large');
+let lineSm = document.querySelector('.economic-here__video-line-small');
 sdf.addEventListener('mouseenter',  function(){
   animate = true;
   executeFrame();
+  // lines
+  lineLa.classList.add('active');
+  lineSm.classList.add('active');
+  
 });
 sdf.addEventListener('mouseleave', function(){
   animate = false;
+  // lines
+  lineLa.classList.remove('active');
+  lineSm.classList.remove('active');
 });
 
 

@@ -160,7 +160,7 @@ new Swiper('.DAO-is-changing__slider', {
 window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
 var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
-var numStars = 700;
+var numStars = 500;
 var radius = '0.'+Math.floor(Math.random() * 9) + 10  ;
 var focalLength = canvas.width *2.5;
 var warp = 0;
@@ -230,11 +230,9 @@ function drawStars(){
     pixelY += centerY;
     pixelRadius = 3 * (focalLength / star.z);
     c.beginPath();
-    c.arc(pixelX, pixelY, 7, 0, 2*Math.PI, false);
-    if (document.documentElement.clientWidth < 950) {
-      c.arc(pixelX, pixelY, 5, 0, 2*Math.PI, false);
-    }if (document.documentElement.clientWidth < 550) {
-      c.arc(pixelX, pixelY, 1, 0, 2*Math.PI, false);
+    c.arc(pixelX, pixelY, 5, 0, 2*Math.PI, false);
+    if (document.documentElement.clientWidth < 1300) {
+      c.arc(pixelX, pixelY, 2, 0, 2*Math.PI, false);
     }
     c.fillStyle = "white";
     c.fill();

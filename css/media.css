@@ -273,14 +273,26 @@
 		width: 347px;
 		height: 347px;
 	}
-	.economic-here__video-circle::before {
-		width: 458px;
-		height: 458px;
-	}
-	.economic-here__video-circle::after{
+
+
+	.economic-here__video-line-large{
 		width: 540px;
 		height: 540px;
 	}
+	.economic-here__video-line-large:before {
+		top:-1.9%;
+		left:-1.9%;
+	}
+	.economic-here__video-line-small {
+		width: 458px;
+		height: 458px;
+	}
+	.economic-here__video-line-small:before {
+		top:-2.25%;
+		left:-2.25%;
+	}
+
+
 	.content-block h3 {
 		color: #383838;
 		font-size: 1.7rem;
@@ -953,12 +965,12 @@
 	}
 	.content-block h3 {
 		color: #383838;
-		font-size: 2.25rem;
 		text-align: center;
 	}
 	.content-block p{
 		font-size: 1.1rem;
 		line-height: 18px;
+		margin: 22px 0 0 10px;
 	}
 	.economic-here__tap-ic{
 		display: flex;
@@ -975,7 +987,7 @@
 			transform: translateY(0);
 		}
 		50%{
-			transform: translateY(10px);
+			transform: translateY(5px);
 		}
 		75%{
 			transform: translateY(0px);
@@ -1174,8 +1186,10 @@
 
 	/* ------------------------------ economic-here ----------------------------- */
 	.economic-here .economic-here__titles{
-		font-size: 1.5rem;
+		font-size: 1.71rem;
 		text-align: center;
+		max-width: 310px;
+		line-height: 29px;
 	}
 }
 @media(max-width:775px){
@@ -1380,14 +1394,29 @@
 		width: 302px;
 		height: 302px;
 	}
-	.economic-here__video-circle::before {
-		width: 408px;
-		height: 408px;
-	}
-	.economic-here__video-circle::after {
+
+
+
+	.economic-here__video-line-large{
 		width: 490px;
 		height: 490px;
 	}
+	.economic-here__video-line-large:before {
+		top: -2.1%;
+		left: -2.1%;
+	}
+	.economic-here__video-line-small {
+		width: 408px;
+		height: 408px;
+	}
+	.economic-here__video-line-small:before {
+		top: -2.5%;
+		left: -2.5%;
+		width: 104.7%;
+		height: 104.7%;
+	}
+
+
 	.content-block h3 {
 		font-size: 1.7rem;
 	}
@@ -1464,19 +1493,38 @@
 		width: 257px;
 		height: 257px;
 	}
-	.economic-here__video-circle::before {
-		width: 368px;
-		height: 368px;
-	}
-	.economic-here__video-circle::after{
+
+
+
+	.economic-here__video-line-large{
 		width: 450px;
 		height: 450px;
 	}
+	.economic-here__video-line-large:before {
+		top: -2.5%;
+		left: -2.5%;
+		width: 104.7%;
+		height: 104.7%;
+	}
+	.economic-here__video-line-small {
+		width: 368px;
+		height: 368px;
+	}
+	.economic-here__video-line-small:before {
+		top: -2.8%;
+		left: -2.9%;
+		width: 105.6%;
+		height: 105.6%;
+	}
+
+
+
 	.content-block h3 {
 		font-size: 1.2rem;
 	}
 	.content-block p{
 		font-size: 0.9rem;
+		margin: 12px 0 0 10px;
 	}
 	.myVideo-block{
 		width: 258px;

@@ -260,7 +260,6 @@ body {
 }
 
 
-
 /* ----------------------------- what-is-quasar ----------------------------- */
 .what-is-quasar{
   background: linear-gradient(180deg, #363636 0%, #212121 100%);
@@ -715,16 +714,6 @@ color: #92EADA;
   align-items: center;
   justify-content: center;
   position: relative;
-}
-.economic-here__video-line-large.active{
-  -webkit-transform: scale(0.90);
-  -ms-transform: scale(0.90);
-  transform: scale(0.90);
-}
-.economic-here__video-line-small.active{
-  -webkit-transform: scale(0.92);
-  -ms-transform: scale(0.92);
-  transform: scale(0.92);
 }
 .economic-here__tap-ic{
   display: none;

@@ -162,7 +162,7 @@ var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
 var numStars = 500;
 var radius = '0.'+Math.floor(Math.random() * 9) + 10  ;
-var focalLength = canvas.width *2.5;
+var focalLength = canvas.width *2;
 var warp = 0;
 var centerX, centerY;
 var stars = [], star;
@@ -170,25 +170,28 @@ var i;
 let animate=false;
 
 
+
 let sdf = document.querySelector('.economic-here__video-circle');
 // lines
 let lineLa = document.querySelector('.economic-here__video-line-large');
 let lineSm = document.querySelector('.economic-here__video-line-small');
-sdf.addEventListener('mouseenter',  function(){
-  animate = true;
-  executeFrame();
-  // lines
-  lineLa.classList.add('active');
-  lineSm.classList.add('active');
-  
-});
-sdf.addEventListener('mouseleave', function(){
-  animate = false;
-  // lines
-  lineLa.classList.remove('active');
-  lineSm.classList.remove('active');
-});
-
+if (document.documentElement.clientWidth > 1080) {
+  sdf.addEventListener('mouseenter',  function(){
+    animate = true;
+    executeFrame();
+    // lines
+      lineLa.style.transform= "scale(0.9)";
+      lineSm.style.transform= "scale(0.92)";
+      // window.warp = window.warp==1 ? 0 : 1;
+  });
+  sdf.addEventListener('mouseleave', function(){
+    animate = false;
+    // lines
+      lineLa.style.transform= "none";
+      lineSm.style.transform= "none";
+      // window.warp = window.warp==1 ? 0 : 0;
+  });
+}
 
 initializeStars();
 function executeFrame(){
@@ -206,7 +209,7 @@ function initializeStars(){
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       z: Math.random() * canvas.width,
-      o: '0.'+Math.floor(Math.random() * 99) + 1
+      o: '0.'+Math.floor(Math.random() * 9) + 1
     };
     stars.push(star);
   }
@@ -238,12 +241,9 @@ function drawStars(){
     pixelX += centerX;
     pixelY = (star.y - centerY) * (focalLength / star.z);
     pixelY += centerY;
-    pixelRadius = 3 * (focalLength / star.z);
+    pixelRadius = 1 * (focalLength / star.z);
     c.beginPath();
-    c.arc(pixelX, pixelY, 5, 0, 2*Math.PI, false);
-    if (document.documentElement.clientWidth < 1300) {
-      c.arc(pixelX, pixelY, 2, 0, 2*Math.PI, false);
-    }
+    c.arc(pixelX, pixelY, 4, 0, 2*Math.PI, false);
     c.fillStyle = "white";
     c.fill();
 
@@ -258,13 +258,31 @@ executeFrame();
 
 // for text economic
 let ecoClick = document.querySelector('.economic-here');
-let eco1 = document.querySelector('.block1')
-let eco2 = document.querySelector('.block2')
-let eco3 = document.querySelector('.block3')
-let eco4 = document.querySelector('.block4')
+let eco1 = document.querySelector('.block1');
+let eco2 = document.querySelector('.block2');
+let eco3 = document.querySelector('.block3');
+let eco4 = document.querySelector('.block4');
+let butCl = document.querySelector('.economic-here__tap-ic');
+
+function sddedf(){
+  lineLa.style.animation= "lineS 4s ease-in-out";
+  lineSm.style.animation= "lineS 4s ease-in-out";
+};
+
 ecoClick.addEventListener('click', function(event){
   if (document.documentElement.clientWidth < 1080) {
-  
+
+
+    lineLa.style.transform= "scale(0.92)";
+    lineSm.style.transform= "scale(0.92)";
+
+    setTimeout("lineLa.style.transform= 'none';", 400);
+    setTimeout("lineSm.style.transform= 'none';", 400);
+
+
+    butCl.classList.add('hide');
+    setTimeout("butCl.style.display = 'none';", 600);
+
   if(eco4.classList.contains('active')){
     eco4.classList.remove('active');
     eco1.classList.add('active');

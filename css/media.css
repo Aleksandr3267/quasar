@@ -502,20 +502,15 @@
 		max-width: 228px;
 		padding: 20px 30px;
 		margin: 30px 30px 0 30px;
-		
 	}
 	.list-and-slide p{
 		margin: 15px 0 34px 0;
 	}
 	.how-it-works__lists .list-block::after{
-		display: none;
+		max-width:250px;
+		left: 15px;
 	}
-	.how-it-works__lists .list-and-slide:hover{
-		transform: none;
-	}
-	.how-it-works__scrollbar{
-		display: none;
-	}
+	
 
 
 	/* ----------------------------- DAO-is-changing ---------------------------- */
@@ -537,9 +532,7 @@
 	.whats-new .swiper-container-horizontal>.swiper-scrollbar{
 		width: 90%;
 	}
-	.whats-mini-news__slider{
-		display: none;
-	}
+	
 }
 
 @media(max-width:1360px){
@@ -620,6 +613,10 @@
 	.list-and-slide {
 		max-width: 190px;
 		padding: 20px 15px;
+	}
+	.how-it-works__lists .list-block::after{
+		max-width:190px;
+		left: 0;
 	}
 
 
@@ -732,6 +729,9 @@
 	/* -------------------------------- whats-new ------------------------------- */
 	.whats-new__container {
 		padding: 0 80px;
+	}
+	.whats-mini-news__slider{
+		display: none;
 	}
 
 
@@ -1045,9 +1045,10 @@
 		justify-content: center;
 		left: 0;
 		right: 0;
-		bottom: 15px;
+		bottom: 20px;
 		animation: economic-tap 4s infinite ease-in-out;
 		transform: translateY(0);
+		transition: 0.3s ease;
 	}
 	@keyframes economic-tap {
 		30%{
@@ -1059,6 +1060,10 @@
 		75%{
 			transform: translateY(0px);
 		}
+	}
+	.economic-here__tap-ic.hide{
+		opacity: 0;
+
 	}
 
 	.space-block{
@@ -1179,6 +1184,15 @@
 	}
 	.list-and-slide p{
 		margin: 44px 0 50px 0;
+	}
+	.how-it-works__lists .list-block::after{
+		display: none;
+	}
+	.how-it-works__scrollbar{
+		display: none;
+	}
+	.how-it-works__lists .list-and-slide:hover{
+		transform: none;
 	}
 
 

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+
 @media(max-width:1712px){
 	
 	/* ------------------------------ how-it-works ------------------------------ */
@@ -80,7 +83,7 @@
 	}
 	.main .main__image-token{
 		top: -235px;
-		right: 73px;
+		right: 60px;
 	}
 	.main .main__image-token img {
 		width: 690px;
@@ -456,19 +459,41 @@
 @media(max-width:1400px){
 	.container{
 		max-width: 1384px;
-		padding: 0 46px;
+		padding: 0 120px;
 	}
 
 
 	/* --------------------------------- header --------------------------------- */
 	.top_menu nav {
-		padding: 15px 46px;
+		padding: 15px 120px;
+	}
+	.top_menu .top_logo a img{
+		margin: 0 30px 0 0;
+	}
+
+	
+	/* ---------------------------------- main ---------------------------------- */
+	.main .main__content {
+		margin: 160px 0 0 0;
+	}
+	.main .main__content h1 {
+		font-size: 3rem;
+	}
+	.main .main__content p{
+		font-size: 1.8rem;
+	}
+
+
+	/* ----------------------------- what-is-quasar ----------------------------- */
+	.what-is-quasar__content .text-bold, .what-is-quasar__content .text-bold-two, .what-is-quasar__content .text-bold-three {
+		font-size: 3rem;
 	}
 
 
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works .how-it-works__titles h2{
 		margin: 0 0 0 30px;
+		font-size: 3.5rem;
 	}
 	.how-it-works__lists{
 		flex-wrap:nowrap
@@ -494,17 +519,16 @@
 
 
 	/* ----------------------------- DAO-is-changing ---------------------------- */
-	/* .DAO-is-changing {
-		padding: 131px 46px 139px 46px;
-	} */
 	.DAO-is-changing__titles h2{
 		margin: 0 0 0 80px;
+		font-size: 3.5rem;
+		line-height: 55px;
 	}
 
 
 	/* ------------------------------- whats-news ------------------------------- */
 	.whats-new__container {
-		padding: 0;
+		padding: 0 120px;
 	}
 	.whats-new .whats-news__slider{
 		left: 0;
@@ -520,7 +544,7 @@
 
 @media(max-width:1360px){
 	.DAO-is-changing {
-		padding: 131px 46px 139px 46px
+		padding: 131px 120px 139px 120px;
 	}
 	.DAO-is-changing__container{
 		flex-direction: column;
@@ -566,6 +590,7 @@
 		min-width: auto;
 		max-height: 220px; 
 		min-height: 300px;
+		max-width: 290px;
 	}
 	.image_slider_wrapper .DAO-is-changing__slide p{
 		font-size: 1.1rem;
@@ -591,6 +616,10 @@
 	}
 	.how-it-works .how-it-works__titles h2::after{
 		left: 200px;
+	}
+	.list-and-slide {
+		max-width: 190px;
+		padding: 20px 15px;
 	}
 
 
@@ -663,12 +692,17 @@
 		max-width: 230px;
 		top: 0;
 	}
-
 	.what-is-quasar .what-is-quasar__but{
 		top: 0;
 	}
 	.what-is-quasar .what-is-quasar__button{
 		margin: 166px auto 0 auto;
+	}
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	.DAO-is-changing .image_slider_wrapper .swiper-slide .image-slider__image{
+		max-width: 260px;
 	}
 
 
@@ -685,6 +719,26 @@
 		display: none;
 	}
 	
+}
+@media(max-width:1150px){
+	.container {
+		padding: 0 80px;
+	}
+	.top_menu nav {
+		padding: 15px 80px;
+	}
+
+
+	/* -------------------------------- whats-new ------------------------------- */
+	.whats-new__container {
+		padding: 0 80px;
+	}
+
+
+	/* ----------------------------- DAO-is-changing ---------------------------- */
+	.DAO-is-changing {
+		padding: 131px 80px 139px 80px;
+	}
 }
 @media(max-width:1100px){
 
@@ -708,6 +762,10 @@
 		font-size: 0.9rem;
 		line-height: 16px;
 	}
+	.swiper-container-horizontal>.swiper-scrollbar{
+		left: auto;
+	}
+
 	
 }
 @media(max-width: 1080px) {
@@ -954,7 +1012,7 @@
 	}
 	.video-circle-blocks{
 		display: flex;
-		align-items: center;
+		/* align-items: center; */
 		justify-content: center;
 		width: 100%;
 		height: 100%;
@@ -965,6 +1023,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin: 75px 0 0 0;
 	}
 	.content-blockM h3 {
 		font-size: 1.8rem;
@@ -1032,6 +1091,9 @@
 		display: none;
 	}
 }
+
+
+
 @media(max-width:1024px){
 	.main__mouse{
 		display: none;
@@ -1049,6 +1111,19 @@
 		right: 20px;
 		bottom: 20px;
 	}
+
+	.container {
+		padding: 0 46px;
+	}
+
+	/* ----------------------------------- header ---------------------------------- */
+	.top_menu nav {
+		/* padding: 15px 46px; */
+	}
+	.top_menu .top_logo a img {
+		margin: 0;
+	}
+
 
 	/* ------------------------------ how-it-works ------------------------------ */
 	.how-it-works{
@@ -1100,10 +1175,16 @@
 	.list-and-slide {
 		max-width: 278px;
 		padding: 44px 30px;
-		margin: 30px 30px 0 30px;
+		margin: 30px 20px 0 20px;
 	}
 	.list-and-slide p{
 		margin: 44px 0 50px 0;
+	}
+
+
+	/* -------------------------------- whats-new ------------------------------- */
+	.whats-new__container {
+		padding: 0 46px;
 	}
 
 
@@ -1141,6 +1222,11 @@
 	}
 	.top_menu nav .top_logo img{
 		width: 120px;
+	}
+
+	/* ---------------------------------- main ---------------------------------- */
+	.main .main__content h1{
+		font-size: 2.5rem;
 	}
 
 
@@ -1399,7 +1485,9 @@
 		height: 104.7%;
 	}
 
-
+	.content-blockM{
+		margin: 55px 0 0 0;
+	}
 	.content-blockM h3 {
 		font-size: 1.7rem;
 	}

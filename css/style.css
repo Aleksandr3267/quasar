@@ -771,7 +771,7 @@ color: #92EADA;
 }
 .space-button:hover{
   color: #B079F7;
-  box-shadow: 1px 1px 4px #0C1016, -1px -1px 4px #393939, inset -4px -4px 4px #403F3F, inset 4px 4px 4px #141414;
+  box-shadow: 1px 1px 4px #0C1016, -1px -1px 4px #393939, inset -4px -4px 4px #403F3F, inset 3px 4px 4px #080808;
 }
 
 .video-circle-blocks{

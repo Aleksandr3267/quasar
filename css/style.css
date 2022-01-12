@@ -750,15 +750,6 @@ color: #92EADA;
   border-radius:50%;
   position: relative;
 }
-#space{
-  width: 200%;
-  left: -50%;
-  height: 100%;
-  top: .5%;
-  border-radius:50%;
-  position: relative;
-  
-}
 .space-button{
   font-family: var(--roboto);
   font-weight: 500;

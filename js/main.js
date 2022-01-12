@@ -157,101 +157,105 @@ new Swiper('.DAO-is-changing__slider', {
 
 
 
-window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
-var canvas = document.getElementById("space");
-var c = canvas.getContext("2d");
-var numStars = 500;
-var radius = '0.'+Math.floor(Math.random() * 9) + 10  ;
-var focalLength = canvas.width *2;
-var warp = 0;
-var centerX, centerY;
-var stars = [], star;
-var i;
-let animate=false;
-
-
-
 let sdf = document.querySelector('.economic-here__video-circle');
 // lines
 let lineLa = document.querySelector('.economic-here__video-line-large');
 let lineSm = document.querySelector('.economic-here__video-line-small');
 if (document.documentElement.clientWidth > 1080) {
   sdf.addEventListener('mouseenter',  function(){
-    animate = true;
-    executeFrame();
+      speed = 1;
     // lines
       lineLa.style.transform= "scale(0.9)";
       lineSm.style.transform= "scale(0.92)";
-      // window.warp = window.warp==1 ? 0 : 1;
   });
   sdf.addEventListener('mouseleave', function(){
-    animate = false;
+      speed = 0;
     // lines
       lineLa.style.transform= "none";
       lineSm.style.transform= "none";
-      // window.warp = window.warp==1 ? 0 : 0;
   });
 }
 
-initializeStars();
-function executeFrame(){
-  if(animate)
-    requestAnimFrame(executeFrame);
-    moveStars();
-    drawStars();
+
+
+var speed = 0;
+var starsCount = 800;
+var stars = [];
+class Star{
+	constructor(){
+
+		this.x = random(-width, width);
+		this.y = random(-height, height);
+		this.z = random(width);
+	}
+	update(){
+		// var speed = map(mouseX, 0, width, 0, 20);
+		this.z -= speed;
+		if(this.z < 1){
+			this.x = random(-width, width);
+			this.y = random(-height, height);
+			this.z = width;
+			// You Can Uncomment These -->		
+			// this.pz = this.z;
+		}
+	}
+	draw(){
+		fill(255);
+		noStroke();
+		var sx = map(this.x / this.z, 0, 1, 0, width);
+		var sy = map(this.y / this.z, 0, 1, 0, height);
+		var r = map(this.z, 0, width, 10, 0);
+		ellipse(sx, sy, r, r);
+	}
 }
-function initializeStars(){
-  centerX = canvas.width / 2;
-  centerY = canvas.height / 2;
-  stars = [];
-  for(i = 0; i < numStars; i++){
-    star = {
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      z: Math.random() * canvas.width,
-      o: '0.'+Math.floor(Math.random() * 9) + 1
-    };
-    stars.push(star);
-  }
+function setup(){
+  var width = document.querySelector('.economic-here__video-circle').offsetWidth;
+  var height = document.querySelector('.economic-here__video-circle').offsetHeight;
+	var myCanvas = createCanvas(width, height);
+	for (var i = 0; i < starsCount; i++) {
+		stars[i] = new Star();
+	}
+	let ss = document.querySelector('.space-over');
+	myCanvas.parent(ss);
 }
-function moveStars(){
-  for(i = 0; i < numStars; i++){
-    star = stars[i];
-    star.z--;
-    if(star.z <= 0){
-      star.z = canvas.width;
-    }
-  }
+function draw(){
+	background(0, 180);
+	translate(width/2, height/2);
+	for (var i = 0; i < starsCount; i++) {
+		stars[i].draw();
+		stars[i].update();
+	}
 }
-function drawStars(){
-  var pixelX, pixelY, pixelRadius;
-  // Resize to the screen
-  if(canvas.width != window.innerWidth || canvas.width != window.innerWidth){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    initializeStars();
-  }
-  if(warp==0)
-  {c.fillStyle = "#1A1B1C";
-  c.fillRect(0,0, canvas.width, canvas.height);}
-  // c.fillStyle = "rgba(209, 255, 255, "+radius+")";
-  for(i = 0; i < numStars; i++){
-    star = stars[i];
-    pixelX = (star.x - centerX) * (focalLength / star.z);
-    pixelX += centerX;
-    pixelY = (star.y - centerY) * (focalLength / star.z);
-    pixelY += centerY;
-    pixelRadius = 1 * (focalLength / star.z);
-    c.beginPath();
-    c.arc(pixelX, pixelY, 4, 0, 2*Math.PI, false);
-    c.fillStyle = "white";
-    c.fill();
+
+addEventListener('resize', () => {
+	resizeCanvas(width, height);
+})
 
 
 
-  }
-}
-executeFrame();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

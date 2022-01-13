@@ -206,6 +206,7 @@ body {
   transition: 0.4s ease;
 }
 .main__buttons .main__button-launch:hover{
+  color: #D47AD6;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.64), inset -4px -4px 4px #F4F4F4, inset 4px 4px 4px #C2BFBF;
 }
 .main__buttons .main__button-doc {
@@ -221,6 +222,7 @@ body {
   transition: 0.4s ease;
 }
 .main__buttons .main__button-doc:hover{
+  color: #afacaf;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.64), inset -4px -4px 4px #F4F4F4, inset 4px 4px 4px #C2BFBF;
 }
 .main__socials {
@@ -428,6 +430,7 @@ body {
   transition: 0.4s ease;
 }
 .what-is-quasar .what-is-quasar__button:hover{
+  color: #D47AD6;
   box-shadow: 4px 4px 8px #000000, -4px -4px 8px #383838, inset 4px 4px 3px #151515, inset -4px -4px 4px #474747;
 }
 
@@ -1094,7 +1097,7 @@ color: #92EADA;
   transition: 0.4s ease;
 }
 .whats-news__slide .whats-news__content button:hover{
-  background: #272727;
+  color: #D47AD6;
   border: 1px solid rgba(233, 136, 235, 0.24);
   box-sizing: border-box;
   box-shadow: 4px 4px 8px #000000, -4px -4px 8px #383838, inset 4px 4px 3px #151515, inset -4px -4px 4px #474747;

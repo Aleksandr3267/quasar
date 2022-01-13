@@ -808,7 +808,7 @@ color: #92EADA;
   width: 168px;
   height: 168px;
   background: #2E2E2E;
-  box-shadow: 4px 4px 4px #000000, -3px -3px 4px #515151, inset 0px 0px 0px #403F3F, inset 0px 0px 0px #000000;
+  box-shadow: 4px 4px 4px #000000, -2px -2px 4px #323232, inset 0px 0px 0px #403F3F, inset 0px 0px 0px #000000;
   border-radius: 50%;
   -webkit-transition: 0.4s ease;
   -moz-transition:0.4s ease;

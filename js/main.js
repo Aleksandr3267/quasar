@@ -3,6 +3,13 @@ let menu = document.querySelector('.menu');
 let bodyLock = document.querySelector('body');
 document.addEventListener('click', burg);
 
+// anchor 
+$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+
 function burg(event){
   if(event.target.closest('.header-burger')){
     burger.classList.toggle('active');
@@ -15,6 +22,12 @@ function burg(event){
     bodyLock.classList.remove('lock');
   }
 }
+menu.addEventListener('click', function(){
+  burger.classList.remove('active');
+  menu.classList.remove('active');
+  bodyLock.classList.remove('lock');
+});
+
 
 document.addEventListener('keyup', function(event){
   if(event.code === 'Escape'){

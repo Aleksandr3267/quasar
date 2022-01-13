@@ -362,9 +362,6 @@
 		font-size: 1rem;
 		margin: 30px 0 0 0;
 	}
-	.whats-new .swiper-container-horizontal>.swiper-scrollbar{
-		left: 30px;
-	}
 	/* mini Thumbs----------------------------*/
 	.whats-mini-news__slider .whats-mini-news__image {
 		min-width: 230px;
@@ -762,10 +759,6 @@
 		font-size: 0.9rem;
 		line-height: 16px;
 	}
-	.swiper-container-horizontal>.swiper-scrollbar{
-		left: auto;
-	}
-
 	
 }
 @media(max-width: 1080px) {

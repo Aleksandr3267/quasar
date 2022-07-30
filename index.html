@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quasar</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="shortcut icon" href="img/Token.svg" type="image/png">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </noscript>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6VHWCQPCWL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6VHWCQPCWL');
+    </script>
+</head><!-- WRAPPER -->
+<div class="wrapper">
+    <div id="wrapper__m-top" class="wrapper__menu-top"> <img src="./img/Token.svg" alt="token"> </div>
+    <div class="wrapper__block"> <a href="#header" class="wrapper__tre"> <svg width="70" height="70" viewBox="0 0 70 70"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 0C4.47715 0 0 4.47715 0 10V60C0 65.5229 4.47715 70 10 70H60C65.5229 70 70 65.5229 70 60V10C70 4.47715 65.5229 0 60 0H10ZM36.241 17.0797C35.4754 15.7254 33.5246 15.7254 32.7589 17.0797L15.8355 47.0157C15.0818 48.349 16.045 50 17.5765 50H51.4235C52.955 50 53.9182 48.349 53.1645 47.0157L36.241 17.0797Z"
+                    fill="#E988EB" />
+            </svg> </a> </div> <!-- header -->
+    <header id="header" class="header">
+        <div id="navbar" class="top_menu ">
+            <nav class="tm-navbar uk-navbar container">
+                <div class="top_logo"> <a href="#"><img src="./img/logo.svg" alt="logo"></a> </div> <!-- burger -->
+                <div class="header-burger"> <span></span> </div> <!-- menu -->
+                <div id="main-menu" class="menu">
+                    <ul class="top_menu_list">
+                        <li> <a href="https://app.quasardao.finance/" target="blank">Stake</a> </li>
+                        <li> <a class="some_link" href="#how-it-works">How it works</a> </li>
+                        <li> <a href="#">FAQ</a> </li>
+                    </ul> <!-- menu in burger -->
+                    <div class="menu-in">
+                        <div class="menu-in-buttons">
+                            <div class="menu-in-but"> <a href="https://app.quasardao.finance/"
+                                    class="menu-in-button-launch" target="blank">Launch App</a> <a href="#"
+                                    class="menu-in-button-doc">Documentation</a> </div>
+                        </div>
+                        <div class="menu-in-social">
+                            <ul class="social">
+                                <li><a href="https://t.me/QuasarDAO" target="blank"><svg width="25" height="25"
+                                            viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_422_237)">
+                                                <path
+                                                    d="M24.5102 2.04812C24.108 1.67962 23.5364 1.55682 23.0183 1.72757L1.03644 8.97371C0.437365 9.17117 0.0311146 9.70594 0.00147595 10.336C-0.0281139 10.966 0.326134 11.5366 0.903966 11.7895L6.34025 14.168C6.36676 14.291 7.92736 21.5291 7.98043 21.7752C8.04855 22.0912 8.20895 22.3727 8.54874 22.4593C8.89244 22.5468 9.13527 22.359 9.39171 22.167C9.53444 22.0601 13.4259 19.1462 13.4259 19.1462L18.1422 23.0055C18.4169 23.2304 18.7526 23.3477 19.0949 23.3477C19.2579 23.3477 19.4225 23.3211 19.5825 23.2668C20.0789 23.0985 20.4469 22.6934 20.5669 22.1832L24.9597 3.50633C25.0846 2.97532 24.9124 2.41663 24.5102 2.04812ZM9.74313 15.5309C9.74044 15.5373 9.73781 15.5445 9.73531 15.5531L8.82594 18.7302L7.8111 14.0234L14.7895 10.1462L9.91051 15.2477C9.83365 15.3281 9.77711 15.4252 9.74313 15.5309ZM10.0318 19.8534L10.4448 18.4103L10.8399 17.03L12.2554 18.1884L10.0318 19.8534ZM23.5304 3.1701L19.1376 21.847C19.1354 21.8562 19.1325 21.869 19.111 21.8763C19.0897 21.8835 19.0794 21.8753 19.072 21.8692L13.9113 17.6462C13.9112 17.6461 13.9111 17.6459 13.9109 17.6458L11.5199 15.6892L19.2017 7.65706C19.4526 7.39471 19.474 6.98841 19.2522 6.70105C19.0303 6.41365 18.6318 6.33157 18.3145 6.50794L6.93995 12.8277L1.49254 10.4443C1.47594 10.437 1.46681 10.433 1.46813 10.4049C1.46944 10.3769 1.47892 10.3738 1.4961 10.3681L23.4779 3.122C23.4886 3.11853 23.5006 3.11453 23.5183 3.13064C23.5359 3.14685 23.533 3.15916 23.5304 3.1701Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_422_237">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg> Telegram Chat (EN)</a></li>
+                                <li> <a href="https://twitter.com/QuasarFinance" target="blank"><svg width="25"
+                                            height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24.8895 5.34858C24.7417 5.10815 24.4713 4.97187 24.1897 4.99628L22.9432 5.10487L24.1347 2.70287C24.2766 2.41678 24.2205 2.0721 23.9953 1.84569C23.7701 1.61927 23.4257 1.56156 23.139 1.70199L19.9853 3.24647C18.0369 2.21786 15.6027 2.52318 13.9277 4.04901C12.5297 5.32245 11.7949 7.28081 11.9319 9.23374C8.27813 8.86753 5.18535 6.77617 3.35654 3.39696C3.2352 3.17279 3.00771 3.02616 2.75346 3.00814C2.49873 2.99042 2.25332 3.10331 2.10166 3.30824C0.967375 4.84057 0.887785 6.94155 1.777 8.67002C1.53188 8.6081 1.27104 8.52431 0.98178 8.42768C0.733976 8.34482 0.460783 8.3979 0.261905 8.56743C0.0630278 8.73696 -0.0325778 8.99824 0.00995159 9.2561C0.361808 11.3893 1.60576 13.0288 3.5708 13.9992C3.31494 14.0883 3.05385 14.1607 2.78838 14.216C2.52461 14.271 2.31103 14.4639 2.22973 14.7208C2.14843 14.9776 2.21201 15.2584 2.39609 15.4551C3.81118 16.9677 5.85532 17.7122 7.30728 18.0694C5.6564 19.3622 3.87431 19.5785 1.28476 19.4896C0.985002 19.4805 0.70883 19.6494 0.582804 19.9211C0.456827 20.1929 0.505705 20.5137 0.707023 20.7356C1.78652 21.9255 5.71944 23.2672 9.85382 23.3678C10.0173 23.3718 10.1841 23.3739 10.3545 23.3739C13.2573 23.3739 17.0938 22.7516 19.8476 19.9978C21.9319 17.9135 23.2356 15.5141 23.7224 12.8663C24.1156 10.7278 23.8671 9.01528 23.7477 8.19223C23.7389 8.13174 23.7295 8.06753 23.7219 8.01137L24.888 6.13198C25.0367 5.89223 25.0373 5.58901 24.8895 5.34858ZM22.2721 8.4063C22.4933 9.93091 23.1664 14.5704 18.7933 18.9435C16.2513 21.4854 12.5487 21.9419 9.89005 21.8773C7.62144 21.8221 5.59224 21.3882 4.12153 20.8934C4.71865 20.8201 5.25078 20.7072 5.75308 20.551C7.1378 20.1206 8.30762 19.3462 9.43448 18.1138C9.62232 17.9084 9.68004 17.6155 9.58429 17.3542C9.48853 17.0928 9.25514 16.9066 8.97906 16.8713C8.26817 16.7801 6.13213 16.4206 4.4501 15.2603C4.93481 15.0621 5.4023 14.814 5.84868 14.5179C6.09356 14.3554 6.22022 14.0643 6.17198 13.7744C6.12378 13.4845 5.90987 13.2499 5.62559 13.1754C4.24888 12.8145 2.58735 12.0068 1.82119 10.204C2.31044 10.2897 2.84243 10.3105 3.40981 10.1833C3.6728 10.1244 3.88354 9.92808 3.96089 9.66987C4.03828 9.41167 3.97031 9.13179 3.7831 8.93794C2.82978 7.95053 2.47329 6.52758 2.77915 5.30995C3.78081 6.77387 5.04981 8.00591 6.50372 8.9168C8.36363 10.0821 10.5344 10.7261 12.7816 10.779C13.0102 10.7838 13.2296 10.684 13.3752 10.5068C13.5207 10.3297 13.5766 10.0955 13.5269 9.87173C13.1403 8.13369 13.6917 6.28085 14.9317 5.15131C16.2178 3.97968 18.1187 3.80194 19.5541 4.71937C19.7733 4.85946 20.0498 4.87514 20.2835 4.76068L21.8236 4.00639L21.0175 5.63144C20.8977 5.87289 20.9176 6.1602 21.0695 6.38281C21.2213 6.60541 21.4811 6.729 21.75 6.70541L22.8361 6.61083L22.3358 7.41723C22.1679 7.68789 22.2027 7.92802 22.2721 8.4063Z"
+                                                fill="white" />
+                                        </svg>Twitter</a> </li>
+                                <li> <a href="https://discord.com/channels/923594187163713628/923594187163713631"
+                                        target="blank"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_422_241)">
+                                                <path
+                                                    d="M9.03931 9.91895C7.59365 9.91895 6.41748 11.2147 6.41748 12.8074C6.41748 14.4 7.59365 15.6958 9.03931 15.6958C10.485 15.6958 11.6612 14.4 11.6612 12.8074C11.6612 11.2147 10.485 9.91895 9.03931 9.91895ZM9.03931 14.231C8.40137 14.231 7.88232 13.5923 7.88232 12.8074C7.88232 12.0224 8.40137 11.3838 9.03931 11.3838C9.67729 11.3838 10.1964 12.0224 10.1964 12.8074C10.1964 13.5923 9.67729 14.231 9.03931 14.231Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M15.9605 9.91895C14.5148 9.91895 13.3386 11.2147 13.3386 12.8074C13.3386 14.4 14.5148 15.6958 15.9605 15.6958C17.4062 15.6958 18.5824 14.4 18.5824 12.8074C18.5824 11.2147 17.4062 9.91895 15.9605 9.91895ZM15.9605 14.231C15.3226 14.231 14.8035 13.5923 14.8035 12.8074C14.8035 12.0224 15.3226 11.3838 15.9605 11.3838C16.5985 11.3838 17.1175 12.0224 17.1175 12.8074C17.1175 13.5923 16.5985 14.231 15.9605 14.231Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M24.9986 17.7039C24.9814 17.3942 24.5434 10.0692 21.7618 5.68745C21.7049 5.59785 21.6292 5.52163 21.54 5.46421C18.1005 3.24941 15.7577 3.25576 15.6597 3.25537C15.3756 3.25913 15.1309 3.42437 15.0127 3.66314L13.8311 5.92749C13.3909 5.89868 12.9465 5.88374 12.4998 5.88374C12.0531 5.88374 11.6087 5.89868 11.1685 5.92749L9.98825 3.66577C9.87052 3.42563 9.62507 3.25918 9.33986 3.25542C9.24128 3.25483 6.89875 3.24966 3.45969 5.46426C3.37048 5.52173 3.29474 5.5979 3.23786 5.6875C0.456218 10.0692 0.0181812 17.3942 0.000896026 17.7039C-0.00994382 17.898 0.0568531 18.0885 0.186589 18.2334C0.315593 18.3773 3.38 21.7446 7.61569 21.7446C7.63464 21.7446 7.65412 21.7445 7.67311 21.7444C7.89572 21.7428 8.10544 21.64 8.24318 21.4653L10.1969 18.9858C10.9473 19.0715 11.7181 19.1162 12.4998 19.1162C13.2815 19.1162 14.0523 19.0715 14.8026 18.9858L16.7564 21.4653C16.8941 21.64 17.1038 21.7428 17.3264 21.7444C17.3457 21.7445 17.3646 21.7446 17.3839 21.7446C21.6192 21.7446 24.684 18.3773 24.813 18.2334C24.9426 18.0885 25.0094 17.898 24.9986 17.7039ZM17.6818 20.2729L16.4603 18.7227C18.3196 18.3401 19.9885 17.6893 21.2912 16.8153C21.6271 16.5899 21.7168 16.1349 21.4914 15.799C21.2661 15.4631 20.8109 15.3733 20.4751 15.5988C18.5309 16.9033 15.6239 17.6513 12.4998 17.6513C9.37575 17.6513 6.46882 16.9033 4.52443 15.599C4.18845 15.3736 3.73351 15.4633 3.50817 15.7992C3.28283 16.1352 3.37248 16.5901 3.70842 16.8155C5.01115 17.6893 6.68 18.3402 8.53932 18.7227L7.31789 20.2728C4.45007 20.1397 2.16784 18.1342 1.48635 17.4687C1.60011 16.0495 2.19045 10.1963 4.38981 6.6084C6.54953 5.24512 8.17936 4.86597 8.90729 4.7606L9.60221 6.09219C7.96838 6.33076 6.43766 6.76919 5.13381 7.38306C4.76784 7.55532 4.61086 7.9917 4.78312 8.35772C4.95544 8.72363 5.39181 8.88057 5.75773 8.7084C7.62033 7.83149 10.0147 7.34858 12.4998 7.34858C14.985 7.34858 17.3794 7.83159 19.2419 8.70859C19.3427 8.75605 19.4488 8.77856 19.5534 8.77856C19.8282 8.77856 20.0917 8.62305 20.2166 8.35796C20.3888 7.99204 20.2319 7.55562 19.8659 7.3833C18.562 6.76939 17.0313 6.33086 15.3973 6.09229L16.0922 4.76069C16.8201 4.86606 18.45 5.24522 20.6098 6.6085C22.8067 10.1927 23.3989 16.052 23.5132 17.47C22.8334 18.137 20.5613 20.1408 17.6818 20.2729Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_422_241">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>Discord</a> </li>
+                                <li> <a href="mailto:QuasarDAOfinance@gmail.com" target="blank"><svg width="25"
+                                            height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_422_246)">
+                                                <path
+                                                    d="M22.6562 3.125H2.34377C1.05133 3.125 0 4.17633 0 5.46877V19.5313C0 20.8237 1.05133 21.875 2.34377 21.875H22.6562C23.9487 21.875 25 20.8237 25 19.5313V5.46877C25 4.17633 23.9487 3.125 22.6562 3.125ZM22.6562 4.68749C22.7624 4.68749 22.8634 4.70952 22.9557 4.74798L12.5 13.81L2.04427 4.74798C2.13659 4.70957 2.23757 4.68749 2.34371 4.68749H22.6562ZM22.6562 20.3125H2.34377C1.91271 20.3125 1.56249 19.9623 1.56249 19.5312V6.39877L11.9881 15.4343C12.1353 15.5617 12.3177 15.625 12.5 15.625C12.6823 15.625 12.8647 15.5617 13.0119 15.4343L23.4375 6.39877V19.5313C23.4375 19.9623 23.0873 20.3125 22.6562 20.3125Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_422_246">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>Mail</a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="https://app.quasardao.finance/" class="button-launch" target="blank">Launch App</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <h1>WE INTRODUCE QUASAR DAO</h1>
+                <p>Financial tools to grow your wealth - stake and earn compounding interest</p>
+                <div class="main__buttons"> <a href="https://app.quasardao.finance/" class="main__button-launch"
+                        target="blank">Launch App</a> <a href="#" class="main__button-doc">Documentation</a> </div>
+                <div class="main__socials"> <a href="https://t.me/QuasarDAO" class="main__soc" target="blank"><svg
+                            width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.3144 0.867612C33.7513 0.351704 32.951 0.17978 32.2257 0.418833L1.45111 10.5634C0.612408 10.8399 0.0436581 11.5885 0.00216398 12.4706C-0.0392618 13.3527 0.456685 14.1515 1.26565 14.5055L8.87644 17.8354C8.91356 18.0077 11.0984 28.141 11.1727 28.4855C11.2681 28.9279 11.4926 29.322 11.9683 29.4432C12.4495 29.5658 12.7895 29.3028 13.1485 29.034C13.3483 28.8844 18.7963 24.8049 18.7963 24.8049L25.3991 30.208C25.7837 30.5229 26.2537 30.6871 26.733 30.6871C26.9612 30.687 27.1916 30.6498 27.4156 30.5738C28.1106 30.3382 28.6257 29.771 28.7937 29.0567L34.9437 2.9091C35.1185 2.16569 34.8775 1.38352 34.3144 0.867612ZM13.6405 19.7435C13.6367 19.7524 13.633 19.7625 13.6295 19.7745L12.3564 24.2225L10.9356 17.633L20.7053 12.2049L13.8748 19.347C13.7672 19.4595 13.6881 19.5956 13.6405 19.7435ZM14.0445 25.7951L14.6228 23.7747L15.1759 21.8423L17.1577 23.464L14.0445 25.7951ZM32.9427 2.43837L26.7928 28.586C26.7897 28.599 26.7856 28.6169 26.7555 28.6271C26.7257 28.6372 26.7112 28.6256 26.7009 28.6171L19.476 22.7049C19.4758 22.7047 19.4756 22.7045 19.4754 22.7044L16.1279 19.9651L26.8824 8.72012C27.2337 8.35283 27.2637 7.78401 26.9532 7.38171C26.6425 6.97935 26.0845 6.86444 25.6404 7.11135L9.71603 15.959L2.08965 12.6222C2.06641 12.6121 2.05363 12.6064 2.05547 12.5671C2.05732 12.5279 2.07058 12.5235 2.09464 12.5156L32.8692 2.37104C32.8841 2.36619 32.9009 2.36058 32.9257 2.38314C32.9504 2.40583 32.9463 2.42306 32.9427 2.43837Z"
+                                fill="#C4C4C4" />
+                        </svg></a> <a href="https://twitter.com/QuasarFinance" class="main__soc" target="blank"><svg
+                            width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.8454 5.48798C34.6384 5.15137 34.2598 4.96058 33.8656 4.99476L32.1204 5.14679L33.7886 1.78398C33.9872 1.38346 33.9088 0.900915 33.5935 0.583932C33.2781 0.266949 32.796 0.186148 32.3945 0.38275L27.9794 2.54503C25.2517 1.10497 21.8437 1.53242 19.4987 3.66859C17.5416 5.4514 16.5128 8.1931 16.7047 10.9272C11.5894 10.4145 7.25949 7.4866 4.69916 2.75571C4.52928 2.44188 4.2108 2.23659 3.85485 2.21137C3.49822 2.18655 3.15464 2.3446 2.94232 2.6315C1.35433 4.77676 1.2429 7.71814 2.48779 10.138C2.14463 10.0513 1.77945 9.93401 1.37449 9.79873C1.02757 9.68272 0.645096 9.75703 0.366667 9.99437C0.088239 10.2317 -0.0456089 10.5975 0.0139322 10.9585C0.506531 13.945 2.24806 16.2402 4.99912 17.5988C4.64091 17.7236 4.2754 17.8249 3.90373 17.9023C3.53445 17.9793 3.23544 18.2495 3.12162 18.6091C3.00781 18.9687 3.09681 19.3617 3.35453 19.6372C5.33565 21.7548 8.19746 22.7971 10.2302 23.2971C7.91896 25.107 5.42404 25.4099 1.79866 25.2854C1.379 25.2727 0.992362 25.5091 0.815926 25.8895C0.639559 26.27 0.707986 26.7191 0.989833 27.0298C2.50112 28.6957 8.00721 30.5741 13.7953 30.7149C14.0243 30.7204 14.2578 30.7234 14.4962 30.7234C18.5603 30.7234 23.9314 29.8522 27.7866 25.9969C30.7047 23.0789 32.5299 19.7197 33.2114 16.0128C33.7618 13.0189 33.4139 10.6214 33.2468 9.4691C33.2345 9.3844 33.2213 9.29451 33.2107 9.21589L34.8432 6.58474C35.0514 6.24909 35.0523 5.82458 34.8454 5.48798ZM31.1809 9.76879C31.4906 11.9032 32.433 18.3985 26.3106 24.5208C22.7518 28.0796 17.5682 28.7186 13.8461 28.6282C10.67 28.5509 7.82913 27.9435 5.77015 27.2507C6.60611 27.1482 7.3511 26.99 8.05431 26.7714C9.99292 26.1688 11.6307 25.0846 13.2083 23.3593C13.4713 23.0717 13.5521 22.6617 13.418 22.2958C13.2839 21.9299 12.9572 21.6692 12.5707 21.6197C11.5754 21.4922 8.58499 20.9888 6.23014 19.3644C6.90874 19.0869 7.56322 18.7395 8.18816 18.325C8.53098 18.0975 8.70831 17.6899 8.64077 17.2841C8.5733 16.8783 8.27381 16.5498 7.87582 16.4455C5.94843 15.9402 3.62229 14.8095 2.54966 12.2855C3.23462 12.4055 3.9794 12.4346 4.77374 12.2565C5.14192 12.1741 5.43696 11.8993 5.54524 11.5378C5.65359 11.1763 5.55844 10.7845 5.29635 10.5131C3.96169 9.13072 3.4626 7.13858 3.89081 5.4339C5.29313 7.48339 7.06973 9.20824 9.1052 10.4835C11.7091 12.1149 14.7482 13.0165 17.8942 13.0905C18.2143 13.0973 18.5214 12.9576 18.7252 12.7095C18.9289 12.4616 19.0073 12.1337 18.9376 11.8204C18.3964 9.38713 19.1683 6.79316 20.9044 5.2118C22.705 3.57152 25.3662 3.32269 27.3757 4.60709C27.6826 4.80322 28.0697 4.82516 28.3969 4.66493L30.553 3.60891L29.4245 5.88398C29.2568 6.22202 29.2846 6.62425 29.4973 6.9359C29.7099 7.24755 30.0736 7.42057 30.4501 7.38755L31.9705 7.25514L31.2701 8.3841C31.035 8.76301 31.0837 9.0992 31.1809 9.76879Z"
+                                fill="#C4C4C4" />
+                        </svg></a> <a href="https://discord.com/channels/923594187163713628/923594187163713631"
+                        class="main__soc" target="blank"><svg width="35" height="27" viewBox="0 0 35 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.6552 9.88672C10.6313 9.88672 8.98462 11.7008 8.98462 13.9305C8.98462 16.1603 10.6313 17.9743 12.6552 17.9743C14.6792 17.9743 16.3259 16.1603 16.3259 13.9305C16.3259 11.7008 14.6792 9.88672 12.6552 9.88672ZM12.6552 15.9235C11.7621 15.9235 11.0354 15.0295 11.0354 13.9305C11.0354 12.8316 11.7621 11.9375 12.6552 11.9375C13.5484 11.9375 14.2751 12.8316 14.2751 13.9305C14.2751 15.0295 13.5484 15.9235 12.6552 15.9235Z"
+                                fill="#C4C4C4" />
+                            <path
+                                d="M22.345 9.88672C20.321 9.88672 18.6743 11.7008 18.6743 13.9305C18.6743 16.1603 20.321 17.9743 22.345 17.9743C24.3689 17.9743 26.0156 16.1603 26.0156 13.9305C26.0156 11.7008 24.3689 9.88672 22.345 9.88672ZM22.345 15.9235C21.4518 15.9235 20.7251 15.0295 20.7251 13.9305C20.7251 12.8316 21.4518 11.9375 22.345 11.9375C23.2381 11.9375 23.9648 12.8316 23.9648 13.9305C23.9648 15.0295 23.2381 15.9235 22.345 15.9235Z"
+                                fill="#C4C4C4" />
+                            <path
+                                d="M34.9982 20.7855C34.974 20.352 34.3608 10.097 30.4666 3.9625C30.387 3.83706 30.2809 3.73035 30.156 3.64996C25.3408 0.549247 22.0609 0.558134 21.9237 0.557587C21.5259 0.56285 21.1834 0.794179 21.0178 1.12846L19.3636 4.29855C18.7474 4.25822 18.1253 4.2373 17.4998 4.2373C16.8744 4.2373 16.2522 4.25822 15.636 4.29855L13.9836 1.13215C13.8188 0.795956 13.4752 0.562919 13.0759 0.557655C12.9379 0.556835 9.65834 0.549589 4.84366 3.65003C4.71876 3.73049 4.61274 3.83713 4.5331 3.96257C0.638803 10.097 0.0255513 20.352 0.00135209 20.7855C-0.0138237 21.0573 0.0796919 21.324 0.261323 21.5268C0.441928 21.7284 4.73209 26.4425 10.6621 26.4425C10.6886 26.4425 10.7159 26.4423 10.7425 26.4422C11.0541 26.44 11.3477 26.2961 11.5406 26.0515L14.2758 22.5802C15.3264 22.7002 16.4054 22.7627 17.4998 22.7627C18.5942 22.7627 19.6733 22.7002 20.7237 22.5802L23.459 26.0515C23.6518 26.2961 23.9454 26.44 24.2571 26.4422C24.2841 26.4424 24.3106 26.4425 24.3375 26.4425C30.2669 26.4425 34.5578 21.7284 34.7382 21.5268C34.9198 21.324 35.0133 21.0573 34.9982 20.7855ZM24.7546 24.3821L23.0445 22.2118C25.6476 21.6763 27.9841 20.765 29.8077 19.5415C30.2781 19.226 30.4036 18.5889 30.088 18.1187C29.7726 17.6484 29.1354 17.5227 28.6653 17.8384C25.9433 19.6647 21.8736 20.7119 17.4998 20.7119C13.1261 20.7119 9.05644 19.6647 6.3343 17.8386C5.86392 17.5232 5.22702 17.6487 4.91154 18.119C4.59606 18.5893 4.72157 19.2263 5.19188 19.5417C7.01571 20.7651 9.35209 21.6764 11.9551 22.2119L10.2451 24.382C6.23019 24.1957 3.03507 21.388 2.08098 20.4563C2.24026 18.4694 3.06672 10.2749 6.14583 5.25183C9.16944 3.34323 11.4512 2.81242 12.4703 2.6649L13.4432 4.52913C11.1558 4.86313 9.01283 5.47693 7.18743 6.33635C6.67507 6.57752 6.4553 7.18845 6.69647 7.70087C6.93771 8.21316 7.54864 8.43286 8.06092 8.19183C10.6686 6.96416 14.0207 6.28809 17.4998 6.28809C20.9791 6.28809 24.3313 6.9643 26.9388 8.1921C27.0799 8.25855 27.2285 8.29006 27.3749 8.29006C27.7596 8.29006 28.1285 8.07233 28.3033 7.70121C28.5445 7.18893 28.3247 6.57793 27.8123 6.33669C25.9869 5.47721 23.8439 4.86327 21.5563 4.52927L22.5292 2.66504C23.5482 2.81256 25.83 3.34337 28.8538 5.25196C31.9294 10.2698 32.7586 18.4728 32.9185 20.4581C31.9669 21.3918 28.786 24.1972 24.7546 24.3821Z"
+                                fill="#C4C4C4" />
+                        </svg> </a> </div>
+                <div class="main__mouse"> <img src="./img/Group.svg" alt="mouse"> </div>
+            </div>
+            <div class="main__image-token"> <img src="./img/main-image.webp" alt="main-image"></div>
+        </div>
+    </main> <!-- --------------------------- what-is-quasar ---------------------------- -->
+    <section class="what-is-quasar">
+        <div class="container">
+            <h2 class="what-is-quasar__title wow animate__animated animate__backInLeft">WHAT IS QUASAR?</h2>
+            <div class="what-is-quasar__content">
+                <div class="what-is-quasar__block first">
+                    <p class="text-bold wow animate__animated animate__fadeInLeft animate__delay-1s">WE ARE BUILDING A
+                        NEW FINANCIAL SYSTEM</p>
+                    <p class="text-thin">Quasar is a community driven decentralized autonomous economic institution
+                        (DAEI) in the DeFi 2.0. It’s opens a new opportunities for the industry</p>
+                </div>
+                <div class="what-is-quasar__block">
+                    <p class="text-bold-two wow animate__animated animate__fadeInRight animate__delay-1s">HELP FOR USERS
+                    </p>
+                    <p class="text-thin-two">Instead of spending their LP tokens to receive farming rewards, users can
+                        exchange their LP tokens for protocol management tokens at a reduced rate. This is done through
+                        a process called Bonding. Since the protocol never sells these LP tokens, liquidity is
+                        effectively locked in its treasury. </p>
+                </div>
+                <div class="what-is-quasar__block third ">
+                    <p class="text-bold-three wow animate__animated animate__fadeInLeft animate__delay-1s">HELP TO
+                        PROTOCOLS</p>
+                    <p class="text-thin-three">Quasar is a new platform to help protocols acquire their own liquidity.
+                        Protocols no longer have to pay out high incentives for renting liquidity, and also guarantee
+                        consistency of liquidity to facilitate transactions.</p>
+                </div>
+            </div>
+            <div class="what-is-quasar__but"> <a href="https://app.quasardao.finance/" class="what-is-quasar__button"
+                    target="blank">Buy Token</a> </div>
+        </div>
+    </section> <!-- ---------------------------- how it works? ---------------------------- -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="how-it-works__titles">
+                <h2>How <br>it works?</h2>
+                <p>Quasar strives to preserve and increase the income of each user</p>
+            </div>
+            <div class="how-it-works__lists">
+                <div class="list-block">
+                    <div class="list-and-slide">
+                        <h3>Asset-backed Assets</h3>
+                        <p>Each quasar token is supported by a basket of stablecoins and quasar-USDT LP in the treasury.
+                            This means that 1 $Quas will always be equal to 1 dollar or more.</p>
+                        <div class="list-num">01</div>
+                    </div>
+                </div>
+                <div class="list-block">
+                    <div class="list-and-slide">
+                        <h3>Protocol control</h3>
+                        <p>Treasury and reserve are managed and controlled by the protocol itself, ensuring transparency
+                            and fairness for all participants.</p>
+                        <div class="list-num">02</div>
+                    </div>
+                </div>
+                <div class="list-block">
+                    <div class="list-and-slide">
+                        <h3>Сommunity</h3>
+                        <p>Quas is an open, community-driven protocol in which token holders can discuss, propose and
+                            implement changes to the protocol.</p>
+                        <div class="list-num">03</div>
+                    </div>
+                </div>
+                <div class="list-block">
+                    <div class="list-and-slide">
+                        <h3>Auto compounding</h3>
+                        <p>The no-action staking mechanism automatically reinvests the rewards, bringing the investor a
+                            high APY </p>
+                        <div class="list-num">04</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="how-it-works__scrollbar"></div>
+    </section> <!-- ---------------------------- economic-here ---------------------------- -->
+    <section class="economic-here">
+        <div class="container">
+            <div class="economic-here__titles">
+                <h2>THE ECONOMIC OF THE FUTURE IS ALREADY HERE</h2>
+            </div>
+            <div class="economic-here__content">
+                <div class="economic-here__content-left">
+                    <div class="content-block">
+                        <h3>Staking</h3>
+                        <p>Use the tool for passive earnings by keeping your $QUAS tokens</p>
+                    </div>
+                    <div class="economic-here__content-line line-left"></div>
+                    <div class="content-block">
+                        <h3>Bonding</h3>
+                        <p>Provide liquidity and get QUAS tokens at a discount, as well as get a fixed income at a set
+                            point in time in $QUAS tokens</p>
+                    </div>
+                </div> <!-- economic-here__video -->
+                <div class="economic-here__video">
+                    <div class="economic-here__video-line-large">
+                        <div class="video-line-large-bg"></div>
+                    </div>
+                    <div class="economic-here__video-line-small">
+                        <div class="video-line-small-bg"></div>
+                    </div>
+                    <div class="economic-here__video-circle">
+                        <!-- animate block -->
+                        <div class="space-block">
+                            <div class="space-over">
+                                <!-- <canvas id="space"></canvas> -->
+                            </div>
+                        </div> <!-- button --> <a href="https://app.quasardao.finance/" class="space-button"
+                            target="blank">
+                            Launch App </a> <!-- content -->
+                        <div class="video-circle-blocks">
+                            <div class="content-blockM block1">
+                                <h3>Staking</h3>
+                                <p>Use the tool for passive earnings by keeping your $QUAS tokens</p>
+                            </div>
+                            <div class="content-blockM block2">
+                                <h3>Bonding</h3>
+                                <p>Provide liquidity and get QUAS tokens at a discount, as well as get a fixed income at
+                                    a set point in time in $QUAS tokens</p>
+                            </div>
+                            <div class="content-blockM block3">
+                                <h3>Exchange</h3>
+                                <p>Buy, exchange and trade $QUAS tokens on various Lending and CEX exchanges</p>
+                            </div>
+                            <div class="content-blockM block4 active">
+                                <h3>Possibilities</h3>
+                                <p>QUASAR offers many earning tools. Now you don't need to look for alternative sources
+                                    of high profitability. All financial instruments in one place now!</p>
+                            </div>
+                        </div>
+                        <div class="economic-here__tap-ic"> <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_422_518)">
+                                    <path
+                                        d="M33.4009 16.565H33.3419C32.5364 16.5606 31.7581 16.8566 31.1589 17.3951C30.6738 16.0528 29.4412 15.0878 27.9975 15.0878C27.1126 15.094 26.2674 15.4573 25.6544 16.0959C25.0907 14.9547 23.9598 14.1805 22.6596 14.1805H22.5968C21.8999 14.1698 21.22 14.3965 20.6687 14.8229V6.68721C20.6687 4.72116 19.138 3.12183 17.2762 3.12183C15.4164 3.12183 13.8936 4.72012 13.8926 6.68479L13.8771 22.8265L12.9635 21.717C12.1625 20.7197 10.9834 20.1004 9.70762 20.0069C8.4581 19.9214 7.22893 20.356 6.31128 21.2088L5.51644 21.8674C5.26012 22.0799 5.18699 22.4421 5.3405 22.7374L13.0684 37.592C14.4815 40.3066 17.1699 42.0002 20.0846 42.0002H28.7937V41.9926C33.2094 41.9926 36.7896 38.1609 36.7941 33.456C36.7959 31.3509 36.7879 29.782 36.7893 28.5104C36.7938 25.1082 36.7903 23.8528 36.7817 20.1046C36.7772 18.143 35.2576 16.565 33.4009 16.565ZM35.3659 28.5055C35.3645 29.7775 35.3625 31.3527 35.3604 33.4577C35.3566 37.3847 32.3922 40.5868 28.7523 40.5868H20.085C17.6991 40.5868 15.4909 39.1844 14.3224 36.9393L6.85738 22.5946L7.22582 22.2872C7.23514 22.2797 7.24411 22.2707 7.25308 22.2628C7.88681 21.6663 8.7396 21.3599 9.60792 21.4169C10.4956 21.4848 11.3145 21.9188 11.8696 22.6146L14.0323 25.2461C14.2213 25.4769 14.5353 25.5635 14.8161 25.4631C15.0969 25.3628 15.2846 25.0964 15.2846 24.7984L15.2973 6.68548C15.298 5.49944 16.195 4.53452 17.2768 4.53452C18.3587 4.53452 19.2557 5.50047 19.2557 6.68721V17.6083C19.2557 17.6462 19.2539 17.6845 19.2539 17.7231C19.2539 17.7397 19.2557 17.7566 19.2557 17.7728V22.4421C19.2557 22.8323 19.572 23.1487 19.9622 23.1487C20.3523 23.1487 20.6687 22.8323 20.6687 22.4421V17.6321C20.6687 16.4878 21.5429 15.5936 22.5968 15.5936H22.6596C23.7421 15.5936 24.6429 16.5371 24.6429 17.7238V21.9964C24.6429 22.3866 24.9592 22.7029 25.3494 22.7029C25.7396 22.7029 26.0559 22.3866 26.0559 21.9964V18.6442C26.0559 17.4572 26.9135 16.4916 28.002 16.4916C29.0842 16.4916 29.9418 17.4568 29.9418 18.6442V21.8067C29.9418 22.1969 30.2581 22.5132 30.6483 22.5132C31.0385 22.5132 31.3548 22.1969 31.3548 21.8067V20.0942C31.3548 18.9071 32.2594 17.9781 33.3419 17.9781H33.4009C34.4807 17.9781 35.3607 18.923 35.3635 20.1063C35.3721 23.8517 35.3704 25.1057 35.3659 28.5055Z"
+                                        fill="#C4C4C4" />
+                                    <path
+                                        d="M11.6484 6.99207C12.0386 6.99207 12.3549 6.67573 12.3549 6.28555C12.3663 3.58953 14.5552 1.41028 17.2509 1.41028C19.9469 1.41028 22.1355 3.58953 22.1469 6.28555C22.1469 6.67573 22.4632 6.99207 22.8534 6.99207C23.2436 6.99207 23.5599 6.67573 23.5599 6.28555C23.5468 2.81021 20.7262 0 17.2509 0C13.7759 0 10.955 2.81021 10.9419 6.28555C10.9419 6.67573 11.2582 6.99207 11.6484 6.99207Z"
+                                        fill="#C4C4C4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_422_518">
+                                        <rect width="42" height="42" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg> </div>
+                    </div>
+                    <div class="space-button-m-block"> <a href="https://app.quasardao.finance/"
+                            class="space-button-mobile" target="blank"> Launch App </a> </div>
+                </div>
+                <div class="economic-here__content-right">
+                    <div class="content-block">
+                        <h3>Lending</h3>
+                        <p>use credit funds while maintaining a high staking APY</p>
+                    </div>
+                    <div class="economic-here__content-line line-right"></div>
+                    <div class="content-block">
+                        <h3>Possibilities</h3>
+                        <p>QUASAR offers many earning tools. Now you don't need to look for alternative sources of high
+                            profitability. All financial instruments in one place now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ---------------------------- DAO is changing ---------------------------- -->
+    <section class="DAO-is-changing">
+        <div class="DAO-is-changing__container">
+            <div class="DAO-is-changing__titles">
+                <h2>Quasar DAO is changing the DeFi world</h2>
+                <p class="DAO-is-changing__sub">The Quasar protocol is designed to allow the value of the $QUAS token to
+                    grow over time. This creates a hedge against inflation. Providing the $QUAS token with a pool of
+                    stablecoins ensures the stability of the token price.</p>
+            </div>
+            <div class="DAO-is-changing__aaaa"></div>
+            <div class="DAO-is-changing__lists">
+                <p class="sub-title">The Quasar protocol is designed to allow the value of the $QUAS token to grow over
+                    time. This creates a hedge against inflation. Providing the $QUAS token with a pool of stablecoins
+                    ensures the stability of the token price.</p>
+                <div class="DAO-is-changing__slider swiper-container">
+                    <div class="image_slider_wrapper swiper-wrapper">
+                        <div class=" swiper-slide DAO-is-changing__slide">
+                            <div class="image-slider__image">
+                                <p>Quasar is treasury of worth for community. It’s accumulates and distributes liquidity
+                                    in innovative DeFi protocols, and also supports the development of the DeFi 2.0
+                                    ecosystem in blockchains of various levels.</p>
+                                <div class="list-num">01</div>
+                            </div>
+                        </div>
+                        <div class=" swiper-slide DAO-is-changing__slide">
+                            <div class="image-slider__image">
+                                <p>Quasar rewards all members with cumulative interest by increasing their $QUAS token
+                                    supply. All $QUAS minted for betting fees are backed by Quasar treasury reserves.
+                                </p>
+                                <div class="list-num">02</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide DAO-is-changing__slide">
+                            <div class="image-slider__image">
+                                <p>The Quasar DAO protocol owns almost all of its liquidity, which helps maintain price
+                                    stability and treasury income. With the protocol's liquidity, Quasar is protected
+                                    from adverse market conditions.</p>
+                                <div class="list-num">03</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide DAO-is-changing__slide">
+                            <div class="image-slider__image">
+                                <p>The QUAS token is minted and evenly distributed among the users who place bets. The
+                                    more users place QUAS bets, the more APY decreases, but the price of the QUAS token
+                                    rises, thereby creating a balance that protects your investment.</p>
+                                <div class="list-num">04</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide DAO-is-changing__slide">
+                            <div class="image-slider__image">
+                                <p>The Quasar DAO protocol is designed in such a way that the value of the QUAS token
+                                    increases over time, creating protection against inflation, and the provision of the
+                                    QUAS token with a basket of stablecoins ensures the stability of the token price.
+                                </p>
+                                <div class="list-num">05</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------------------------- whats-news ------------------------------ -->
+    <section class="whats-new">
+        <div class="whats-new__container">
+            <div class="whats-new__titles">
+                <h2>Quasar DAO latest news</h2>
+            </div>
+            <div class="whats-new__news-container">
+                <div class="whats-news__slider-block">
+                    <!-- whats-news__slider -->
+                    <div class="whats-news__slider swiper-container">
+                        <div class="image_slider_wrapper swiper-wrapper">
+
+                            <div class="swiper-slide whats-news__slide">
+                                <div onclick="window.open('https://medium.com/@quasardaofinance/quasar-dao-the-big-explosion-129a358cc69a','_blank')"
+                                    class="whats-news__image">
+                                    <p>Quasar DAO “The big explosion”</p>
+                                    <div class="list-num">02</div> <span class="date-news">22 Jan 2022</span>
+                                </div>
+                                <div class="whats-news__content">
+                                    <p class="text-news">
+                                        Quasar is a community-driven decentralized autonomous economic institution
+                                        (DAEI) working in DeFi 2.0 space. The main goal of Quasar is to be a store of
+                                        value for its community, by accumulating and distributing liquidity in
+                                        innovative DeFi protocols
+                                    </p>
+                                    <button
+                                        onclick="window.open('https://medium.com/@quasardaofinance/quasar-dao-the-big-explosion-129a358cc69a','_blank')"
+                                        class="read-more-news">Read More</button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide whats-news__slide">
+                                <div onclick="window.open('https://medium.com/@quasardaofinance/introducing-quasardao-f06931dc9b90','_blank')"
+                                    class="whats-news__image">
+                                    <p>Introducing QuasarDAO</p>
+                                    <div class="list-num">01</div> <span class="date-news">19 January 2022</span>
+                                </div>
+                                <div class="whats-news__content">
+                                    <p>
+                                        QuasarDAO is building several financial products, one of which will be a
+                                        community-driven decentralized venture fund that allows the average crypto
+                                        market player to
+                                        participate in potential early-stage, high-margin investments.
+                                    </p>
+                                    <button
+                                        onclick="window.open('https://medium.com/@quasardaofinance/introducing-quasardao-f06931dc9b90','_blank')"
+                                        class="read-more-news">Read More</button>
+                                </div>
+                            </div>
+
+                            <!-- <div class="swiper-slide whats-news__slide">
+                                <div class="whats-news__image">
+                                    <p>2 new tokens was added to QUASAR</p>
+                                    <div class="list-num">03</div> <span class="date-news">12 nov 2021</span>
+                                </div>
+                                <div class="whats-news__content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
+                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide whats-news__slide">
+                                <div class="whats-news__image">
+                                    <p>2 new tokens was added to QUASAR </p>
+                                    <div class="list-num">04</div> <span class="date-news">12 nov 2021</span>
+                                </div>
+                                <div class="whats-news__content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
+                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide whats-news__slide">
+                                <div class="whats-news__image">
+                                    <p>2 new tokens was added to QUASAR</p>
+                                    <div class="list-num">05</div> <span class="date-news">12 nov 2021</span>
+                                </div>
+                                <div class="whats-news__content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
+                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
+                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div> <!-- whats-new__title-right -->
+                    <div class="whats-new__title-right">
+                        <h2>Quasar DAO latest news</h2>
+                    </div>
+                </div> <!-- mini Thumbs-->
+                <div class="whats-mini-news__slider swiper-container">
+                    <!-- <div class="image-mini-slider_wrapper swiper-wrapper">
+                        <div class=" swiper-slide ">
+                            <div class="whats-mini-news__image">
+                                <p>2 new tokens was added to QUASAR</p>
+                                <div class="list-num">01</div> <span class="date-news">12 nov 2021</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="whats-mini-news__image">
+                                <p>2 new tokens was added to QUASAR</p>
+                                <div class="list-num">02</div> <span class="date-news">12 nov 2021</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="whats-mini-news__image">
+                                <p>2 new tokens was added to QUASAR</p>
+                                <div class="list-num">03</div> <span class="date-news">12 nov 2021</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="whats-mini-news__image">
+                                <p>2 new tokens was added to QUASAR </p>
+                                <div class="list-num">04</div> <span class="date-news">12 nov 2021</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="whats-mini-news__image">
+                                <p>2 new tokens was added to QUASAR</p>
+                                <div class="list-num">05</div> <span class="date-news">12 nov 2021</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------- footer -------------------------------- -->
+    <footer class="footer">
+        <script type="text/javascript">
+            /* CSS #1 */
+            var giftofspeed = document.createElement('link');
+            giftofspeed.rel = 'stylesheet';
+            giftofspeed.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+            giftofspeed.type = 'text/css';
+            var godefer = document.getElementsByTagName('link')[0];
+            godefer.parentNode.insertBefore(giftofspeed, godefer);
+        </script>
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__left">
+                    <div class="footer__logo"> <img src="./img/footer-logo.svg" alt="footer-logo"> </div>
+                    <p>QUASAR DAO © 2022 All Rights Reserved. This is not an investment solicitation or offering. USA
+                        citizens, residents and legal entities are fully excluded.</p>
+                </div>
+                <div class="footer__center">
+                    <ul>
+                        <li><a href="https://app.quasardao.finance/" target="blank">Stake</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__social">
+                        <li> <a href="https://t.me/QuasarDAO" target="blank"> <svg width="25" height="25"
+                                    viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_422_237)">
+                                        <path
+                                            d="M24.5102 2.04812C24.108 1.67962 23.5364 1.55682 23.0183 1.72757L1.03644 8.97371C0.437365 9.17117 0.0311146 9.70594 0.00147595 10.336C-0.0281139 10.966 0.326134 11.5366 0.903966 11.7895L6.34025 14.168C6.36676 14.291 7.92736 21.5291 7.98043 21.7752C8.04855 22.0912 8.20895 22.3727 8.54874 22.4593C8.89244 22.5468 9.13527 22.359 9.39171 22.167C9.53444 22.0601 13.4259 19.1462 13.4259 19.1462L18.1422 23.0055C18.4169 23.2304 18.7526 23.3477 19.0949 23.3477C19.2579 23.3477 19.4225 23.3211 19.5825 23.2668C20.0789 23.0985 20.4469 22.6934 20.5669 22.1832L24.9597 3.50633C25.0846 2.97532 24.9124 2.41663 24.5102 2.04812ZM9.74313 15.5309C9.74044 15.5373 9.73781 15.5445 9.73531 15.5531L8.82594 18.7302L7.8111 14.0234L14.7895 10.1462L9.91051 15.2477C9.83365 15.3281 9.77711 15.4252 9.74313 15.5309ZM10.0318 19.8534L10.4448 18.4103L10.8399 17.03L12.2554 18.1884L10.0318 19.8534ZM23.5304 3.1701L19.1376 21.847C19.1354 21.8562 19.1325 21.869 19.111 21.8763C19.0897 21.8835 19.0794 21.8753 19.072 21.8692L13.9113 17.6462C13.9112 17.6461 13.9111 17.6459 13.9109 17.6458L11.5199 15.6892L19.2017 7.65706C19.4526 7.39471 19.474 6.98841 19.2522 6.70105C19.0303 6.41365 18.6318 6.33157 18.3145 6.50794L6.93995 12.8277L1.49254 10.4443C1.47594 10.437 1.46681 10.433 1.46813 10.4049C1.46944 10.3769 1.47892 10.3738 1.4961 10.3681L23.4779 3.122C23.4886 3.11853 23.5006 3.11453 23.5183 3.13064C23.5359 3.14685 23.533 3.15916 23.5304 3.1701Z"
+                                            fill="#383838" />
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg> <span>Telegram Chat (EN)</span> </a> </li>
+                        <li> <a href="https://twitter.com/QuasarFinance" target="blank"> <svg width="25" height="25"
+                                    viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.8895 5.34858C24.7417 5.10815 24.4713 4.97187 24.1897 4.99628L22.9432 5.10487L24.1347 2.70287C24.2766 2.41678 24.2205 2.0721 23.9953 1.84569C23.7701 1.61927 23.4257 1.56156 23.139 1.70199L19.9853 3.24647C18.0369 2.21786 15.6027 2.52318 13.9277 4.04901C12.5297 5.32245 11.7949 7.28081 11.9319 9.23374C8.27813 8.86753 5.18535 6.77617 3.35654 3.39696C3.2352 3.17279 3.00771 3.02616 2.75346 3.00814C2.49873 2.99042 2.25332 3.10331 2.10166 3.30824C0.967375 4.84057 0.887785 6.94155 1.777 8.67002C1.53188 8.6081 1.27104 8.52431 0.98178 8.42768C0.733976 8.34482 0.460783 8.3979 0.261905 8.56743C0.0630278 8.73696 -0.0325778 8.99824 0.00995159 9.2561C0.361808 11.3893 1.60576 13.0288 3.5708 13.9992C3.31494 14.0883 3.05385 14.1607 2.78838 14.216C2.52461 14.271 2.31103 14.4639 2.22973 14.7208C2.14843 14.9776 2.21201 15.2584 2.39609 15.4551C3.81118 16.9677 5.85532 17.7122 7.30728 18.0694C5.6564 19.3622 3.87431 19.5785 1.28476 19.4896C0.985002 19.4805 0.70883 19.6494 0.582804 19.9211C0.456827 20.1929 0.505705 20.5137 0.707023 20.7356C1.78652 21.9255 5.71944 23.2672 9.85382 23.3678C10.0173 23.3718 10.1841 23.3739 10.3545 23.3739C13.2573 23.3739 17.0938 22.7516 19.8476 19.9978C21.9319 17.9135 23.2356 15.5141 23.7224 12.8663C24.1156 10.7278 23.8671 9.01528 23.7477 8.19223C23.7389 8.13174 23.7295 8.06753 23.7219 8.01137L24.888 6.13198C25.0367 5.89223 25.0373 5.58901 24.8895 5.34858ZM22.2721 8.4063C22.4933 9.93091 23.1664 14.5704 18.7933 18.9435C16.2513 21.4854 12.5487 21.9419 9.89005 21.8773C7.62144 21.8221 5.59224 21.3882 4.12153 20.8934C4.71865 20.8201 5.25078 20.7072 5.75308 20.551C7.1378 20.1206 8.30762 19.3462 9.43448 18.1138C9.62232 17.9084 9.68004 17.6155 9.58429 17.3542C9.48853 17.0928 9.25514 16.9066 8.97906 16.8713C8.26817 16.7801 6.13213 16.4206 4.4501 15.2603C4.93481 15.0621 5.4023 14.814 5.84868 14.5179C6.09356 14.3554 6.22022 14.0643 6.17198 13.7744C6.12378 13.4845 5.90987 13.2499 5.62559 13.1754C4.24888 12.8145 2.58735 12.0068 1.82119 10.204C2.31044 10.2897 2.84243 10.3105 3.40981 10.1833C3.6728 10.1244 3.88354 9.92808 3.96089 9.66987C4.03828 9.41167 3.97031 9.13179 3.7831 8.93794C2.82978 7.95053 2.47329 6.52758 2.77915 5.30995C3.78081 6.77387 5.04981 8.00591 6.50372 8.9168C8.36363 10.0821 10.5344 10.7261 12.7816 10.779C13.0102 10.7838 13.2296 10.684 13.3752 10.5068C13.5207 10.3297 13.5766 10.0955 13.5269 9.87173C13.1403 8.13369 13.6917 6.28085 14.9317 5.15131C16.2178 3.97968 18.1187 3.80194 19.5541 4.71937C19.7733 4.85946 20.0498 4.87514 20.2835 4.76068L21.8236 4.00639L21.0175 5.63144C20.8977 5.87289 20.9176 6.1602 21.0695 6.38281C21.2213 6.60541 21.4811 6.729 21.75 6.70541L22.8361 6.61083L22.3358 7.41723C22.1679 7.68789 22.2027 7.92802 22.2721 8.4063Z"
+                                        fill="#383838" />
+                                </svg> <span> Twitter</span> </a> </li>
+                        <li> <a href="https://discord.com/channels/923594187163713628/923594187163713631"
+                                target="blank"> <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_422_241)">
+                                        <path
+                                            d="M9.03931 9.91895C7.59365 9.91895 6.41748 11.2147 6.41748 12.8074C6.41748 14.4 7.59365 15.6958 9.03931 15.6958C10.485 15.6958 11.6612 14.4 11.6612 12.8074C11.6612 11.2147 10.485 9.91895 9.03931 9.91895ZM9.03931 14.231C8.40137 14.231 7.88232 13.5923 7.88232 12.8074C7.88232 12.0224 8.40137 11.3838 9.03931 11.3838C9.67729 11.3838 10.1964 12.0224 10.1964 12.8074C10.1964 13.5923 9.67729 14.231 9.03931 14.231Z"
+                                            fill="#383838" />
+                                        <path
+                                            d="M15.9605 9.91895C14.5148 9.91895 13.3386 11.2147 13.3386 12.8074C13.3386 14.4 14.5148 15.6958 15.9605 15.6958C17.4062 15.6958 18.5824 14.4 18.5824 12.8074C18.5824 11.2147 17.4062 9.91895 15.9605 9.91895ZM15.9605 14.231C15.3226 14.231 14.8035 13.5923 14.8035 12.8074C14.8035 12.0224 15.3226 11.3838 15.9605 11.3838C16.5985 11.3838 17.1175 12.0224 17.1175 12.8074C17.1175 13.5923 16.5985 14.231 15.9605 14.231Z"
+                                            fill="#383838" />
+                                        <path
+                                            d="M24.9986 17.7039C24.9814 17.3942 24.5434 10.0692 21.7618 5.68745C21.7049 5.59785 21.6292 5.52163 21.54 5.46421C18.1005 3.24941 15.7577 3.25576 15.6597 3.25537C15.3756 3.25913 15.1309 3.42437 15.0127 3.66314L13.8311 5.92749C13.3909 5.89868 12.9465 5.88374 12.4998 5.88374C12.0531 5.88374 11.6087 5.89868 11.1685 5.92749L9.98825 3.66577C9.87052 3.42563 9.62507 3.25918 9.33986 3.25542C9.24128 3.25483 6.89875 3.24966 3.45969 5.46426C3.37048 5.52173 3.29474 5.5979 3.23786 5.6875C0.456218 10.0692 0.0181812 17.3942 0.000896026 17.7039C-0.00994382 17.898 0.0568531 18.0885 0.186589 18.2334C0.315593 18.3773 3.38 21.7446 7.61569 21.7446C7.63464 21.7446 7.65412 21.7445 7.67311 21.7444C7.89572 21.7428 8.10544 21.64 8.24318 21.4653L10.1969 18.9858C10.9473 19.0715 11.7181 19.1162 12.4998 19.1162C13.2815 19.1162 14.0523 19.0715 14.8026 18.9858L16.7564 21.4653C16.8941 21.64 17.1038 21.7428 17.3264 21.7444C17.3457 21.7445 17.3646 21.7446 17.3839 21.7446C21.6192 21.7446 24.684 18.3773 24.813 18.2334C24.9426 18.0885 25.0094 17.898 24.9986 17.7039ZM17.6818 20.2729L16.4603 18.7227C18.3196 18.3401 19.9885 17.6893 21.2912 16.8153C21.6271 16.5899 21.7168 16.1349 21.4914 15.799C21.2661 15.4631 20.8109 15.3733 20.4751 15.5988C18.5309 16.9033 15.6239 17.6513 12.4998 17.6513C9.37575 17.6513 6.46882 16.9033 4.52443 15.599C4.18845 15.3736 3.73351 15.4633 3.50817 15.7992C3.28283 16.1352 3.37248 16.5901 3.70842 16.8155C5.01115 17.6893 6.68 18.3402 8.53932 18.7227L7.31789 20.2728C4.45007 20.1397 2.16784 18.1342 1.48635 17.4687C1.60011 16.0495 2.19045 10.1963 4.38981 6.6084C6.54953 5.24512 8.17936 4.86597 8.90729 4.7606L9.60221 6.09219C7.96838 6.33076 6.43766 6.76919 5.13381 7.38306C4.76784 7.55532 4.61086 7.9917 4.78312 8.35772C4.95544 8.72363 5.39181 8.88057 5.75773 8.7084C7.62033 7.83149 10.0147 7.34858 12.4998 7.34858C14.985 7.34858 17.3794 7.83159 19.2419 8.70859C19.3427 8.75605 19.4488 8.77856 19.5534 8.77856C19.8282 8.77856 20.0917 8.62305 20.2166 8.35796C20.3888 7.99204 20.2319 7.55562 19.8659 7.3833C18.562 6.76939 17.0313 6.33086 15.3973 6.09229L16.0922 4.76069C16.8201 4.86606 18.45 5.24522 20.6098 6.6085C22.8067 10.1927 23.3989 16.052 23.5132 17.47C22.8334 18.137 20.5613 20.1408 17.6818 20.2729Z"
+                                            fill="#383838" />
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg> <span> Discord</span> </a> </li>
+                        <li> <a href="mailto:QuasarDAOfinance@gmail.com" target="blank"> <svg width="25" height="25"
+                                    viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_422_246)">
+                                        <path
+                                            d="M22.6562 3.125H2.34377C1.05133 3.125 0 4.17633 0 5.46877V19.5313C0 20.8237 1.05133 21.875 2.34377 21.875H22.6562C23.9487 21.875 25 20.8237 25 19.5313V5.46877C25 4.17633 23.9487 3.125 22.6562 3.125ZM22.6562 4.68749C22.7624 4.68749 22.8634 4.70952 22.9557 4.74798L12.5 13.81L2.04427 4.74798C2.13659 4.70957 2.23757 4.68749 2.34371 4.68749H22.6562ZM22.6562 20.3125H2.34377C1.91271 20.3125 1.56249 19.9623 1.56249 19.5312V6.39877L11.9881 15.4343C12.1353 15.5617 12.3177 15.625 12.5 15.625C12.6823 15.625 12.8647 15.5617 13.0119 15.4343L23.4375 6.39877V19.5313C23.4375 19.9623 23.0873 20.3125 22.6562 20.3125Z"
+                                            fill="#383838" />
+                                    </g>
+                                    <defs>
+                                        <clipPath>
+                                            <rect width="25" height="25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg> <span> Mail</span> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/0f50a82545.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

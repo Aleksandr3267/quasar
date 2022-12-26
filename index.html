@@ -599,7 +599,11 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/0f50a82545.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'></script>
+<script>
+    if (document.body.clientWidth > 1080) {
+        document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'>")
+    }
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
     new WOW().init();

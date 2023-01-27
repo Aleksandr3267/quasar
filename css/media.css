@@ -1143,6 +1143,9 @@
         align-items: center;
         top: 7px
     }
+    .p5Canvas{
+        display: none;
+    }
 
     .video-circle-blocks {
         display: flex;

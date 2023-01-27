@@ -24,12 +24,15 @@
 </head><!-- WRAPPER -->
 <div class="wrapper">
     <div id="wrapper__m-top" class="wrapper__menu-top"> <img src="./img/Token.svg" alt="token"> </div>
-    <div class="wrapper__block"> <a href="#header" class="wrapper__tre"> <svg width="70" height="70" viewBox="0 0 70 70"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="wrapper__block">
+        <a href="#header" class="wrapper__tre">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M10 0C4.47715 0 0 4.47715 0 10V60C0 65.5229 4.47715 70 10 70H60C65.5229 70 70 65.5229 70 60V10C70 4.47715 65.5229 0 60 0H10ZM36.241 17.0797C35.4754 15.7254 33.5246 15.7254 32.7589 17.0797L15.8355 47.0157C15.0818 48.349 16.045 50 17.5765 50H51.4235C52.955 50 53.9182 48.349 53.1645 47.0157L36.241 17.0797Z"
                     fill="#E988EB" />
-            </svg> </a> </div> <!-- header -->
+            </svg>
+        </a>
+    </div> <!-- header -->
     <header id="header" class="header">
         <div id="navbar" class="top_menu ">
             <nav class="tm-navbar uk-navbar container">
@@ -248,9 +251,7 @@
                     <div class="economic-here__video-circle">
                         <!-- animate block -->
                         <div class="space-block">
-                            <div class="space-over">
-                                <!-- <canvas id="space"></canvas> -->
-                            </div>
+                            <div class="space-over"></div>
                         </div> <!-- button --> <a href="https://app.quasardao.finance/" class="space-button"
                             target="blank">
                             Launch App </a> <!-- content -->
@@ -422,49 +423,6 @@
                                         class="read-more-news">Read More</button>
                                 </div>
                             </div>
-
-                            <!-- <div class="swiper-slide whats-news__slide">
-                                <div class="whats-news__image">
-                                    <p>2 new tokens was added to QUASAR</p>
-                                    <div class="list-num">03</div> <span class="date-news">12 nov 2021</span>
-                                </div>
-                                <div class="whats-news__content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
-                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
-                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide whats-news__slide">
-                                <div class="whats-news__image">
-                                    <p>2 new tokens was added to QUASAR </p>
-                                    <div class="list-num">04</div> <span class="date-news">12 nov 2021</span>
-                                </div>
-                                <div class="whats-news__content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
-                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
-                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide whats-news__slide">
-                                <div class="whats-news__image">
-                                    <p>2 new tokens was added to QUASAR</p>
-                                    <div class="list-num">05</div> <span class="date-news">12 nov 2021</span>
-                                </div>
-                                <div class="whats-news__content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore. Ut enim ad minim veniam, quis nostrud sed do eiusmod
-                                        tempor incididunt ut labore et dolore. Lorem ipsum dolor sit. Lorem ipsum dolor
-                                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore. Ut enim ad </p> <button class="read-more-news">Read More </button>
-                                </div>
-                            </div> -->
-
                         </div>
                         <div class="swiper-scrollbar"></div>
                     </div> <!-- whats-new__title-right -->
@@ -596,10 +554,13 @@
         </div>
     </footer>
 </div>
-<script src="js/jquery-3.4.1.min.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/0f50a82545.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'></script>
+<script>
+    if (document.body.clientWidth > 1180) {
+        document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'>")
+    }
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
     new WOW().init();

@@ -2,14 +2,21 @@ let burger = document.querySelector('.header-burger');
 let menu = document.querySelector('.menu');
 let bodyLock = document.querySelector('body');
 document.addEventListener('click', burg);
-// anchor 
-$("body").on('click', '[href*="#"]', function (e) {
+// anchor
+
+document.querySelector("body").addEventListener('click', function (event) {
+    if (!event.target.matches('[href*="#"]')) return;
     var fixed_offset = 100;
-    $('html,body').stop().animate({
-        scrollTop: $(this.hash).offset().top - fixed_offset
-    }, 1000);
-    e.preventDefault();
+    var target = document.querySelector(event.target.hash);
+    if (!target) return;
+    event.preventDefault();
+    var targetTop = target.getBoundingClientRect().top + window.pageYOffset - fixed_offset;
+    window.scrollTo({
+        top: targetTop,
+        behavior: "smooth"
+    });
 });
+
 function burg(event) {
     if (event.target.closest('.header-burger')) {
         burger.classList.toggle('active');
@@ -36,11 +43,13 @@ document.addEventListener('keyup', function (event) {
 });
 let top_menu = document.querySelector('.wrapper__menu-top');
 let nav_bar = document.getElementById("navbar");
-$(document).ready(function () {
+
+
+document.addEventListener("DOMContentLoaded", function () {
     var previousScroll = 0,
-        navBarOrgOffset = $('#navbar').offset().top;
-    $(window).scroll(function () {
-        var currentScroll = $(this).scrollTop();
+        navBarOrgOffset = document.getElementById("navbar").offsetTop;
+    window.addEventListener("scroll", function () {
+        var currentScroll = window.pageYOffset;
         if (currentScroll > navBarOrgOffset) {
             if (currentScroll > previousScroll) {
                 document.getElementById("navbar").style.top = "-150px";
@@ -57,6 +66,8 @@ $(document).ready(function () {
         previousScroll = currentScroll;
     });
 });
+
+
 top_menu.addEventListener('mouseover', function () {
     nav_bar.classList.add('fixed');
     document.getElementById("wrapper__m-top").classList.remove('active');
@@ -93,27 +104,49 @@ window.onload = function () {
         });
     }
 }
-$(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >= 700) {
-            $('.wrapper__block').fadeIn();
-        } else {
-            $('.wrapper__block').fadeOut();
-        }
-    });
-    $('.wrapper__block').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 700);
+// document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= 700) {
+        document.querySelectorAll('.wrapper__block').forEach(function (el) { el.style.opacity = '1'; el.style.pointerEvents = 'auto'; });
+    } else {
+        document.querySelectorAll('.wrapper__block').forEach(function (el) { el.style.opacity = '0'; el.style.pointerEvents = 'none'; });
+    }
+});
+// document.querySelectorAll('.wrapper__block').forEach(function (el) {
+//     el.addEventListener("click", function () {
+//         window.scroll({
+//             top: 0,
+//             left: 0,
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+document.querySelectorAll("a.wrapper__tre").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+        e.preventDefault();
+        var anchor = el.getAttribute('href');
+        var scrollAnchor = document.querySelector(anchor);
+        if (!scrollAnchor) return;
+        window.scroll({
+            top: scrollAnchor.getBoundingClientRect().top + window.pageYOffset - 60,
+            left: 0,
+            behavior: 'smooth'
+        });
     });
 });
-$("a.wrapper__tre").on("click", function (e) {
-    e.preventDefault();
-    var anchor = $(this).attr('href');
-    $('html, body').stop().animate({
-        scrollTop: $(anchor).offset().top - 60
-    }, 800);
-});
+// });
+
+
+
+
+
+
+
+
+
+
+
+
 
 // slider DAO is changing
 new Swiper('.DAO-is-changing__slider', {

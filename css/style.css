@@ -136,7 +136,9 @@ body {
     bottom: 20px;
     right: 146px;
     z-index: 100;
-    display: none
+    transition: .4s ease;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .wrapper__block a svg path {
@@ -1197,20 +1199,18 @@ body {
 .whats-news__slider .whats-news__slide {
     display: flex;
     padding: 30px;
-    opacity: 0 !important;
-    -webkit-transition: 0.4s ease;
+    /* -webkit-transition: 0.4s ease;
     -moz-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
+    -o-transition: 0.4s ease; */
+    transition:all 0.4s ease;
     transition-delay: 0.3s
 }
 
 .whats-news__slider .swiper-slide-active {
-    -webkit-transition: 0.4s ease;
+    /* -webkit-transition: 0.4s ease;
     -moz-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-    opacity: 1 !important;
+    -o-transition: 0.4s ease; */
+    transition:all 0.4s ease;
     transition-delay: 0.6s
 }
 
